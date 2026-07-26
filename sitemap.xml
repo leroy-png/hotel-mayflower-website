@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/rooms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/kamers/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/rooms/single/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/single/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/eenpersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/kamers/eenpersoonskamer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/single/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/eenpersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/rooms/double/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/double/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/tweepersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/kamers/tweepersoonskamer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/double/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/tweepersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/rooms/triple/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/triple/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/driepersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/kamers/driepersoonskamer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/rooms/triple/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/kamers/driepersoonskamer/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/leiden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/leiden/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/leiden/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/leiden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/leiden/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/leiden/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/hotel-information/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/hotel-information/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/hotelinformatie/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/hotelinformatie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/hotel-information/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/hotelinformatie/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/contact/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/contact/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/veelgestelde-vragen/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/veelgestelde-vragen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/veelgestelde-vragen/"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/privacy/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/voorwaarden/"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/voorwaarden/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/voorwaarden/"/>
+    <priority>0.3</priority>
+  </url>
+</urlset>

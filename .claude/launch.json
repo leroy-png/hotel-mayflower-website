@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mayflower-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8931", "--directory", "/Users/lteunissen/Library/CloudStorage/OneDrive-Personal/Hotel Mayflower/Marketing/Claude site/website"],
+      "port": 8931
+    }
+  ]
+}
