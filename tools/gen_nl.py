@@ -119,7 +119,7 @@ home_body = f"""<main id="main">
         <h2>Een gastvrije uitvalsbasis aan het gezelligste plein van de stad</h2>
         <p class="sub-italic">Historisch Leiden voor de deur, een comfortabel bed erachter.</p>
         <p>Hotel Mayflower ligt direct aan de Beestenmarkt, het levendige plein waar Leiden afspreekt voor koffie, diner en een borrel aan het water. Leiden Centraal ligt op zo'n vijf minuten lopen, en de musea, grachten en winkelstraten van de binnenstad bereikt u allemaal te voet.</p>
-        <p>Wij zijn een tweesterren stadshotel in een historisch Nederlands pand: eerlijk comfort, een warm welkom en een van de beste locaties van Leiden — zonder franje waar u niet om vroeg. Een aantal kamers kijkt uit over het plein, en sommige kamers hebben een balkon, afhankelijk van het kamertype.</p>
+        <p>Wij zijn een tweesterrenhotel in een historisch Nederlands pand: eerlijk comfort, een warm welkom en een van de beste locaties van Leiden, zonder franje waar u niet om vroeg. Een aantal kamers kijkt uit over het plein, en sommige kamers hebben een balkon, afhankelijk van het kamertype.</p>
         <a class="btn btn-ghost" href="/nl/hotelinformatie/">Praktische informatie</a>
       </div>
       <div class="split-media portrait reveal reveal-d1">
@@ -149,7 +149,7 @@ home_body = f"""<main id="main">
           <div class="card-body">
             <span class="card-kicker">Voor 1 persoon</span>
             <h3>Eenpersoonskamer</h3>
-            <p style="color:var(--muted);font-size:.95rem">Een compacte, rustige kamer voor wie alleen reist — alles wat u nodig heeft voor een nacht of een week Leiden.</p>
+            <p style="color:var(--muted);font-size:.95rem">Een compacte, rustige kamer voor wie alleen reist: alles wat u nodig heeft voor een nacht of een week Leiden.</p>
             <a class="btn btn-ghost" href="/nl/kamers/eenpersoonskamer/">Bekijk kamer</a>
           </div>
         </article>
@@ -171,7 +171,7 @@ home_body = f"""<main id="main">
           <div class="card-body">
             <span class="card-kicker">Voor 3 personen</span>
             <h3>Driepersoonskamer</h3>
-            <p style="color:var(--muted);font-size:.95rem">Ruimte voor drie — ideaal voor vrienden of een klein gezin dat samen Leiden ontdekt.</p>
+            <p style="color:var(--muted);font-size:.95rem">Ruimte voor drie: ideaal voor vrienden of een klein gezin dat samen Leiden ontdekt.</p>
             <a class="btn btn-ghost" href="/nl/kamers/driepersoonskamer/">Bekijk kamer</a>
           </div>
         </article>
@@ -184,7 +184,7 @@ home_body = f"""<main id="main">
       <div class="center reveal">
         <p class="eyebrow">De locatie</p>
         <h2>Alles te voet</h2>
-        <p class="lede">Laat de auto staan — vanaf onze voordeur ontvouwt Leiden zich op wandeltempo.</p>
+        <p class="lede">Laat de auto staan: vanaf onze voordeur ontvouwt Leiden zich op wandeltempo.</p>
       </div>
       <div class="grid grid-4" style="margin-top:3rem">
         <div class="tile reveal">
@@ -220,7 +220,7 @@ home_body = f"""<main id="main">
         <p class="eyebrow">Het uitzicht vanuit uw kamer</p>
         <h2>Leiden, Stad van Ontdekkingen</h2>
         <p class="sub-italic">Musea, grachten en vier eeuwen verhalen.</p>
-        <p>Rembrandt werd hier geboren, de Pilgrims vertrokken hiervandaan, en de oudste universiteit van Nederland bepaalt nog altijd het ritme van de stad. Kijk hoe beneden de markt wordt opgebouwd, stap in een sloep op de grachten of dwaal door de hofjes — Leiden beloont de nieuwsgierige bezoeker.</p>
+        <p>Rembrandt werd hier geboren, de Pilgrims vertrokken hiervandaan, en de oudste universiteit van Nederland bepaalt nog altijd het ritme van de stad. Kijk hoe beneden de markt wordt opgebouwd, stap in een sloep op de grachten of dwaal door de hofjes. Leiden beloont de nieuwsgierige bezoeker.</p>
         <p>Bij de receptie wijzen we u graag de weg naar onze favoriete plekken: de beste koffie, de mooiste wandelroutes en de musea die uw ochtend waard zijn.</p>
         <a class="btn btn-ghost" href="/nl/leiden/">Plan uw bezoek</a>
       </div>
@@ -252,7 +252,7 @@ home_body = f"""<main id="main">
   </section>
 
   <!--
-    GASTBEOORDELINGEN — sectie voorbereid maar uitgeschakeld.
+    GASTBEOORDELINGEN: sectie voorbereid maar uitgeschakeld.
     Voeg drie echte gastbeoordelingen toe (bijv. van Google of Booking.com, met toestemming)
     en verwijder dit commentaarblok. Zie CHECKLIST.md.
   -->
@@ -266,7 +266,7 @@ home_body = f"""<main id="main">
       <div class="faq-list reveal" style="margin-top:2.6rem">
         <details class="faq-item">
           <summary>Serveert het hotel ontbijt?</summary>
-          <div class="faq-a"><p>Op dit moment niet — het ontbijt is tijdelijk niet beschikbaar vanwege renovatiewerkzaamheden. Op korte loopafstand van het hotel vindt u diverse goede cafés en ontbijtgelegenheden; wij wijzen u graag onze favorieten. Zat ontbijt bij uw boeking of heeft u vooruitbetaald, dan wordt dat bedrag uiteraard terugbetaald.</p></div>
+          <div class="faq-a"><p>Op dit moment niet. Het ontbijt is tijdelijk niet beschikbaar vanwege renovatiewerkzaamheden. Op korte loopafstand van het hotel vindt u diverse goede cafés en ontbijtgelegenheden; wij wijzen u graag onze favorieten. Was ontbijt bij uw boeking inbegrepen of heeft u vooruitbetaald, dan wordt dat bedrag uiteraard terugbetaald.</p></div>
         </details>
         <details class="faq-item">
           <summary>Hoe ver is het hotel van Leiden Centraal?</summary>
@@ -274,7 +274,7 @@ home_body = f"""<main id="main">
         </details>
         <details class="faq-item">
           <summary>Kan ik na 18:00 uur aankomen?</summary>
-          <div class="faq-a"><p>Ja — laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Met uw sleutel heeft u tijdens uw verblijf 24/7 toegang tot het hotel.</p></div>
+          <div class="faq-a"><p>Ja. Laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Met uw sleutel heeft u tijdens uw verblijf 24/7 toegang tot het hotel.</p></div>
         </details>
       </div>
       <div class="center" style="margin-top:2rem">
@@ -288,7 +288,7 @@ home_body = f"""<main id="main">
       <div class="cta-band reveal">
         <p class="eyebrow" style="color:var(--gold-soft)">Beestenmarkt 2, Leiden</p>
         <h2>Uw kamer aan het plein staat klaar</h2>
-        <p class="lede">Boek rechtstreeks bij ons voor de beste beschikbare prijs — zonder tussenpartij, zonder verrassingen.</p>
+        <p class="lede">Boek rechtstreeks bij ons voor de beste beschikbare prijs, zonder tussenpartij en zonder verrassingen.</p>
         <div class="hero-cta" style="justify-content:center">
           <a class="btn btn-gold" href="{BOOK}" rel="noopener">Boek uw verblijf</a>
           <a class="btn btn-ghost" style="color:#F7F1E4;border-color:rgba(247,241,228,.35)" href="/nl/contact/">Stel ons uw vraag</a>
@@ -300,10 +300,10 @@ home_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/index.html",
-           "Hotel Mayflower Leiden — Hotel in centrum Leiden, bij Leiden Centraal",
+           "Hotel Mayflower Leiden | Hotel in centrum Leiden, bij Leiden Centraal",
            "Hotel Mayflower is een gastvrij tweesterrenhotel aan de Beestenmarkt in hartje Leiden, op vijf minuten lopen van Leiden Centraal. Boek direct voor de beste prijs.",
            "/nl/", "/nl/", "/en/", home_body, hotel_ld, body_class="has-hero",
-           og_title="Hotel Mayflower — Verblijf in het hart van Leiden",
+           og_title="Hotel Mayflower: Verblijf in het hart van Leiden",
            og_desc="Een gastvrij stadshotel op loopafstand van Leiden Centraal, musea, restaurants en de historische binnenstad.")
 
 
@@ -376,9 +376,9 @@ kamers_body = f"""<main id="main">
       <div class="reveal">
         <p class="eyebrow">Voordat u kiest</p>
         <h2>Eerlijk over onze kamers</h2>
-        <p>Ons pand stamt uit een tijd van vóór de lift — <strong>alle kamers zijn via de trap bereikbaar</strong>. Is traplopen voor u lastig, neem dan vóór het boeken even <a href="/nl/contact/">contact</a> op, dan denken we met u mee.</p>
-        <p>Uitzicht, balkons en de exacte indeling verschillen per kamer en zijn afhankelijk van beschikbaarheid: sommige kamers kijken uit op de Beestenmarkt, sommige hebben een balkon, andere liggen aan de rustigere achterzijde. Op warme dagen staat er een mobiele aircooler op uw kamer — geen airconditioning, maar met de meegeleverde koelelementen houdt u het aangenaam.</p>
-        <p>Prijzen staan altijd actueel op onze boekingspagina — wat u daar ziet betaalt u, zonder commissie van een tussenpartij.</p>
+        <p>Ons pand stamt uit een tijd van vóór de lift: <strong>alle kamers zijn via de trap bereikbaar</strong>. Is traplopen voor u lastig, neem dan vóór het boeken even <a href="/nl/contact/">contact</a> op, dan denken we met u mee.</p>
+        <p>Uitzicht, balkons en de exacte indeling verschillen per kamer en zijn afhankelijk van beschikbaarheid: sommige kamers kijken uit op de Beestenmarkt, sommige hebben een balkon, andere liggen aan de rustigere achterzijde. Op warme dagen staat er een mobiele aircooler op uw kamer: geen airconditioning, maar met de meegeleverde koelelementen houdt u het aangenaam.</p>
+        <p>Prijzen staan altijd actueel op onze boekingspagina; wat u daar ziet betaalt u, zonder commissie van een tussenpartij.</p>
         <a class="btn btn-gold" href="{BOOK}" rel="noopener">Bekijk beschikbaarheid</a>
       </div>
       <div class="split-media portrait reveal reveal-d1">
@@ -392,8 +392,8 @@ kamers_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/kamers/index.html",
-           "Kamers — Eenpersoons, Tweepersoons & Driepersoons | Hotel Mayflower Leiden",
-           "Eenpersoons-, tweepersoons- en driepersoonskamers in het centrum van Leiden — elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten.",
+           "Kamers: Eenpersoons, Tweepersoons & Driepersoons | Hotel Mayflower Leiden",
+           "Eenpersoons-, tweepersoons- en driepersoonskamers in het centrum van Leiden, elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten.",
            "/nl/kamers/", "/nl/kamers/", "/en/rooms/", kamers_body,
            crumb_ld(("Home", "/nl/"), ("Kamers", "/nl/kamers/")))
 
@@ -408,10 +408,10 @@ ROOM_FACTS_NL = """<ul class="card-meta" style="font-size:1rem;gap:.6rem 1.4rem"
 </ul>"""
 
 STAIRS_NL = """<div class="notice">
-  <strong>Historisch pand, alleen trappen.</strong> Ons gebouw heeft geen lift — alle kamers zijn via de trap bereikbaar. Is traplopen voor u lastig, neem dan vóór het boeken even <a href="/nl/contact/">contact</a> met ons op, dan denken we met u mee.
+  <strong>Historisch pand, alleen trappen.</strong> Ons gebouw heeft geen lift; alle kamers zijn via de trap bereikbaar. Is traplopen voor u lastig, neem dan vóór het boeken even <a href="/nl/contact/">contact</a> met ons op, dan denken we met u mee.
 </div>"""
 
-VARY_NL = """<p class="booking-note">De foto's tonen een selectie van onze kamers. Uitzicht, balkons en exacte indeling verschillen per kamer en zijn afhankelijk van beschikbaarheid. Op warme dagen staat er een mobiele aircooler klaar — let op: dit is een aircooler, geen airconditioning.</p>"""
+VARY_NL = """<p class="booking-note">De foto's tonen een selectie van onze kamers. Uitzicht, balkons en exacte indeling verschillen per kamer en zijn afhankelijk van beschikbaarheid. Op warme dagen staat er een mobiele aircooler klaar. Let op: dit is een aircooler, geen airconditioning.</p>"""
 
 
 def kamer_page(slug, name, kicker, occupancy, intro, paras, gallery, en_slug, title, desc):
@@ -448,7 +448,7 @@ def kamer_page(slug, name, kicker, occupancy, intro, paras, gallery, en_slug, ti
       <div class="reveal reveal-d1">
         <div class="booking-bar" style="grid-template-columns:1fr">
           <h3 style="margin:0">Klaar wanneer u dat bent</h3>
-          <p style="color:var(--muted);margin:0">Actuele prijzen en beschikbaarheid op onze beveiligde boekingspagina — direct boeken is altijd de beste prijs.</p>
+          <p style="color:var(--muted);margin:0">Actuele prijzen en beschikbaarheid op onze beveiligde boekingspagina. Direct boeken is altijd de beste prijs.</p>
           <a class="btn btn-gold" href="{BOOK}" rel="noopener">Boek deze kamer</a>
           <a class="btn btn-ghost" href="/nl/kamers/">Vergelijk alle kamers</a>
         </div>
@@ -463,19 +463,19 @@ def kamer_page(slug, name, kicker, occupancy, intro, paras, gallery, en_slug, ti
 
 kamer_page(
     "eenpersoonskamer", "Eenpersoonskamer", "Voor 1 persoon · Rustig en compact", 1,
-    "Een compacte, rustige kamer voor wie alleen reist — een comfortabel bed, een eigen badkamer en heel Leiden voor de voordeur.",
-    ["Alleen op pad voor werk, studie of een stedentrip? Onze eenpersoonskamers houden het eenvoudig: alles voor een goede nacht, niets dat in de weg staat. Zet uw tas neer, zet een kop thee en stap naar buiten — Leiden Centraal, de musea en de binnenstad liggen allemaal op korte loopafstand.",
+    "Een compacte, rustige kamer voor wie alleen reist: een comfortabel bed, een eigen badkamer en heel Leiden voor de voordeur.",
+    ["Alleen op pad voor werk, studie of een stedentrip? Onze eenpersoonskamers houden het eenvoudig: alles voor een goede nacht, niets dat in de weg staat. Zet uw tas neer, zet een kop thee en stap naar buiten: Leiden Centraal, de musea en de binnenstad liggen allemaal op korte loopafstand.",
      "Sommige kamers kijken uit over de daken van de oude stad; stuk voor stuk bieden ze dezelfde rustige basis."],
     [("view-window-seat", "Zithoekje met uitzicht over de Beestenmarkt"),
      ("room-attic-window", "Zithoek onder de balken in een van onze kamers op de bovenverdieping"),
      ("view-square-panorama", "Het uitzicht over Leiden vanuit een van onze kamers aan de voorzijde")],
     "single",
-    "Eenpersoonskamer — Hotel Mayflower Leiden",
+    "Eenpersoonskamer | Hotel Mayflower Leiden",
     "Compacte eenpersoonskamer in het centrum van Leiden met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Boek direct.")
 
 kamer_page(
     "tweepersoonskamer", "Tweepersoonskamer", "Voor 2 personen · Onze meest geboekte kamer", 2,
-    "Karakteristieke tweepersoonskamers in een historisch pand — sommige met uitzicht op de levendige Beestenmarkt, sommige met balkon, allemaal met eigen badkamer.",
+    "Karakteristieke tweepersoonskamers in een historisch pand: sommige met uitzicht op de levendige Beestenmarkt, sommige met balkon, allemaal met eigen badkamer.",
     ["Onze tweepersoonskamers zijn het hart van het hotel: comfortabele kamers voor twee, hier een zithoekje, daar schuine balken, en in de kamers aan de voorzijde een eersterangs uitzicht op het gezelligste plein van Leiden.",
      "Perfect voor een weekend vol musea en grachtendiners, of als vriendelijke uitvalsbasis tussen Amsterdam, Den Haag en de kust."],
     [("room-attic-double", "Tweepersoonskamer onder de balken met zithoek bij het raam"),
@@ -484,26 +484,26 @@ kamer_page(
      ("room-large-beds", "Comfortabele bedden in een van onze ruimere kamers"),
      ("view-window-seat", "Het uitzicht over de Beestenmarkt vanuit een kamer aan de voorzijde")],
     "double",
-    "Tweepersoonskamer — Hotel Mayflower Leiden",
+    "Tweepersoonskamer | Hotel Mayflower Leiden",
     "Tweepersoonskamer in hartje Leiden, sommige met uitzicht op de Beestenmarkt of balkon. Eigen badkamer, gratis wifi, televisie. Boek direct voor de beste prijs.")
 
 kamer_page(
     "driepersoonskamer", "Driepersoonskamer", "Voor 3 personen · Gezinsfavoriet", 3,
-    "Ruimte voor drie — drie volwaardige bedden, een eigen badkamer en plek om uw spullen kwijt te kunnen. Ideaal voor vrienden of een klein gezin.",
+    "Ruimte voor drie: drie volwaardige bedden, een eigen badkamer en plek om uw spullen kwijt te kunnen. Ideaal voor vrienden of een klein gezin.",
     ["Geen slaapbanken of inschikken: onze driepersoonskamers hebben drie volwaardige bedden, zodat iedereen uitgerust aan de dag begint. Tussen het station, het plein en de musea heeft u het openbaar vervoer nauwelijks nodig.",
      "Een aantal driepersoonskamers is onlangs gerenoveerd; vraag bij het boeken gerust naar de actuele mogelijkheden."],
     [("room-triple-renovated", "Gerenoveerde driepersoonskamer met drie bedden"),
      ("room-triple-beds", "Driepersoonskamer met drie eenpersoonsbedden"),
      ("room-large-beds", "Comfortabele bedden in een van onze ruimere kamers")],
     "triple",
-    "Driepersoonskamer — Hotel Mayflower Leiden",
+    "Driepersoonskamer | Hotel Mayflower Leiden",
     "Driepersoonskamer met drie volwaardige bedden in het centrum van Leiden. Eigen badkamer, gratis wifi, televisie. Ideaal voor vrienden of gezin. Boek direct.")
 
 
 # ---------------- Leiden ----------------
 leiden_tiles = [
     ("± 5 min lopen", "Leiden Centraal", "Rechtstreekse treinen naar Amsterdam (35 min), Schiphol (20 min), Den Haag en Rotterdam."),
-    ("± 4 min lopen", "Museum De Lakenhal", "Beeldende kunst en het verhaal van het Leidse laken — inclusief de jonge Rembrandt."),
+    ("± 4 min lopen", "Museum De Lakenhal", "Beeldende kunst en het verhaal van het Leidse laken, inclusief de jonge Rembrandt."),
     ("± 5 min lopen", "Museum Volkenkunde", "Een van de oudste volkenkundige musea van Europa, aan de Steenstraat."),
     ("± 10 min lopen", "Rijksmuseum van Oudheden", "Het nationale oudhedenmuseum: Egypte, de klassieke wereld en Nederlandse archeologie."),
     ("Voor de deur", "Grachten &amp; rondvaart", "Rondvaartboten en sloepverhuur vertrekken vanaf het water direct aan het plein."),
@@ -521,7 +521,7 @@ leiden_body = f"""<main id="main">
       {crumbs(("Home", "/nl/"), ("Leiden", None))}
       <p class="eyebrow">Leiden &amp; omgeving</p>
       <h1>Stad van Ontdekkingen, te voet</h1>
-      <p class="lede">Hotel Mayflower staat aan de Beestenmarkt, waar de oude stad begint. Musea, grachten, winkelstraten en het station — alles ligt op loopafstand.</p>
+      <p class="lede">Hotel Mayflower staat aan de Beestenmarkt, waar de oude stad begint. Musea, grachten, winkelstraten en het station: alles ligt op loopafstand.</p>
     </div>
   </div>
 
@@ -539,9 +539,9 @@ leiden_body = f"""<main id="main">
         <p class="eyebrow">Waarom Leiden</p>
         <h2>De wieg van Rembrandt, de haven van de Pilgrims</h2>
         <p class="sub-italic">Klein genoeg om te lopen, rijk genoeg voor een week.</p>
-        <p>Leiden draagt zijn geschiedenis licht: dertien musea, de oudste universiteit van het land, molens boven de grachten en hofjes die schuilgaan achter gewone voordeuren. Huur een sloep, loop mee met een stadswandeling of volg het Singelpark — zes groene kilometers rond de binnenstad.</p>
+        <p>Leiden draagt zijn geschiedenis licht: dertien musea, de oudste universiteit van het land, molens boven de grachten en hofjes die schuilgaan achter gewone voordeuren. Huur een sloep, loop mee met een stadswandeling of volg het Singelpark, zes groene kilometers rond de binnenstad.</p>
         <p>Op woensdag en zaterdag strijkt de markt neer langs de Nieuwe Rijn, op vijf minuten van uw kamer. En als de musea sluiten, wordt de Beestenmarkt zelf de bestemming: terrassen, restaurants en avondlicht op het water.</p>
-        <p style="font-size:.9rem;color:var(--faint)">Tip: kijk op <a href="https://www.visitleiden.nl" rel="noopener">visitleiden.nl</a> voor tentoonstellingen en evenementen tijdens uw verblijf. De genoemde attracties zijn aanbevelingen voor uw bezoek — openingstijden en programma's worden door de locaties zelf bepaald.</p>
+        <p style="font-size:.9rem;color:var(--faint)">Tip: kijk op <a href="https://www.visitleiden.nl" rel="noopener">visitleiden.nl</a> voor tentoonstellingen en evenementen tijdens uw verblijf. De genoemde attracties zijn aanbevelingen voor uw bezoek; openingstijden en programma's worden door de locaties zelf bepaald.</p>
       </div>
       <div class="split-media portrait reveal reveal-d1">
         {picture("view-beestenmarkt", "Uitzicht over de Beestenmarkt en de rondvaartboten", sizes="(min-width: 900px) 44vw, 92vw", widths=(480, 960, 1600))}
@@ -554,7 +554,7 @@ leiden_body = f"""<main id="main">
       <div class="center reveal">
         <p class="eyebrow">Hier vindt u ons</p>
         <h2>Beestenmarkt 2, Leiden</h2>
-        <p class="lede">Vanaf Leiden Centraal: verlaat het station aan de centrumzijde, volg de Stationsweg richting de stad, en na zo'n vijf minuten opent het plein zich voor u — wij zitten aan de overzijde, naast de witte HOTEL-entree.</p>
+        <p class="lede">Vanaf Leiden Centraal: verlaat het station aan de centrumzijde, volg de Stationsweg richting de stad, en na zo'n vijf minuten opent het plein zich voor u. Wij zitten aan de overzijde, naast de witte HOTEL-entree.</p>
       </div>
       <div class="map-embed reveal" data-map-title="Kaart met Hotel Mayflower, Beestenmarkt 2, Leiden" style="margin-top:2.4rem">
         <div class="map-consent">
@@ -581,7 +581,7 @@ leiden_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/leiden/index.html",
-           "Leiden & Omgeving — Hotel Mayflower, Beestenmarkt 2",
+           "Leiden & Omgeving | Hotel Mayflower, Beestenmarkt 2",
            "Hotel Mayflower ligt in hartje Leiden: vijf minuten lopen van Leiden Centraal en vlak bij De Lakenhal, Volkenkunde, het Rijksmuseum van Oudheden en de grachten.",
            "/nl/leiden/", "/nl/leiden/", "/en/leiden/", leiden_body,
            crumb_ld(("Home", "/nl/"), ("Leiden", "/nl/leiden/")))
@@ -594,7 +594,7 @@ info_body = f"""<main id="main">
       {crumbs(("Home", "/nl/"), ("Hotelinformatie", None))}
       <p class="eyebrow">Praktisch</p>
       <h1>Hotelinformatie</h1>
-      <p class="lede">Alles wat u wilt weten vóór uw aankomst — eerlijk en op één plek. Vragen? Bel <a href="tel:+31715142641">+31 71 514 2641</a> of mail <a href="mailto:info@hotelmayflower.nl">info@hotelmayflower.nl</a>.</p>
+      <p class="lede">Alles wat u wilt weten vóór uw aankomst, eerlijk en op één plek. Vragen? Bel <a href="tel:+31715142641">+31 71 514 2641</a> of mail <a href="mailto:info@hotelmayflower.nl">info@hotelmayflower.nl</a>.</p>
     </div>
   </div>
 
@@ -602,11 +602,11 @@ info_body = f"""<main id="main">
     <div class="container grid grid-2">
       <div class="tile reveal">
         <h3>Inchecken</h3>
-        <p>Inchecken kan van <strong>15:00 tot 18:00 uur</strong>. Onze receptie is geopend van <strong>09:00 tot 18:00 uur</strong> — bent u eerder in de stad? Van harte welkom: uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten.</p>
+        <p>Inchecken kan van <strong>15:00 tot 18:00 uur</strong>. Onze receptie is geopend van <strong>09:00 tot 18:00 uur</strong>. Bent u eerder in de stad? Van harte welkom: uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Aankomst na 18:00 uur</h3>
-        <p>Geen probleem, mits vooraf afgesproken: wij leggen uw sleutel in onze sleutelkluis, zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen. Met uw sleutel kunt u vervolgens dag en nacht in en uit — het hotel is voor gasten 24/7 toegankelijk.</p>
+        <p>Geen probleem, mits vooraf afgesproken: wij leggen uw sleutel in onze sleutelkluis, zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen. Met uw sleutel kunt u vervolgens dag en nacht in en uit; het hotel is voor gasten 24/7 toegankelijk.</p>
       </div>
       <div class="tile reveal">
         <h3>Uitchecken</h3>
@@ -614,11 +614,11 @@ info_body = f"""<main id="main">
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Betalen</h3>
-        <p>Wij accepteren <strong>uitsluitend pinbetalingen</strong> — debit- en creditcards. Contant geld wordt in het hotel niet geaccepteerd.</p>
+        <p>Wij accepteren <strong>uitsluitend pinbetalingen</strong> (debit- en creditcards). Contant geld wordt in het hotel niet geaccepteerd.</p>
       </div>
       <div class="tile reveal">
         <h3>Ontbijt</h3>
-        <p>Hotel Mayflower serveert op dit moment geen ontbijt vanwege renovatiewerkzaamheden. Op korte loopafstand vindt u diverse cafés en ontbijtgelegenheden — zie onze tips hieronder. Zat ontbijt bij uw boeking of heeft u vooruitbetaald, dan wordt dat bedrag uiteraard terugbetaald.</p>
+        <p>Hotel Mayflower serveert op dit moment geen ontbijt vanwege renovatiewerkzaamheden. Op korte loopafstand vindt u diverse cafés en ontbijtgelegenheden; zie onze tips hieronder. Was ontbijt bij uw boeking inbegrepen of heeft u vooruitbetaald, dan wordt dat bedrag uiteraard terugbetaald.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Geen lift</h3>
@@ -638,7 +638,7 @@ info_body = f"""<main id="main">
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Warme dagen</h3>
-        <p>In de warmere maanden staat er een mobiele aircooler op de kamers — met koelelementen voor extra verkoeling. Let op: dit is een aircooler met ventilator en waterverdamping, geen airconditioning.</p>
+        <p>In de warmere maanden staat er een mobiele aircooler op de kamers, met koelelementen voor extra verkoeling. Let op: dit is een aircooler met ventilator en waterverdamping, geen airconditioning.</p>
       </div>
     </div>
   </section>
@@ -668,7 +668,7 @@ info_body = f"""<main id="main">
     <div class="container">
       <div class="reveal">
         <p class="eyebrow">Parkeren</p>
-        <h2>Leiden is een wandelstad — parkeer aan de rand</h2>
+        <h2>Leiden is een wandelstad, parkeer dus aan de rand</h2>
         <p class="lede">Het hotel heeft geen eigen parkeergelegenheid, en de binnenstad is nooit op auto's gebouwd. Deze openbare opties werken goed:</p>
       </div>
       <div class="table-wrap reveal" style="margin-top:1.8rem">
@@ -682,7 +682,7 @@ info_body = f"""<main id="main">
           </tbody>
         </table>
       </div>
-      <p class="booking-note">Tarieven worden door de exploitanten bepaald en wijzigen af en toe — kijk voor actuele tarieven op <a href="https://www.parkeren-leiden.nl" rel="noopener">parkeren-leiden.nl</a>. Op straat parkeren in het centrum is betaald en schaars; wij raden de garages aan.</p>
+      <p class="booking-note">Tarieven worden door de exploitanten bepaald en wijzigen af en toe; kijk voor actuele tarieven op <a href="https://www.parkeren-leiden.nl" rel="noopener">parkeren-leiden.nl</a>. Op straat parkeren in het centrum is betaald en schaars; wij raden de garages aan.</p>
     </div>
   </section>
 
@@ -690,7 +690,7 @@ info_body = f"""<main id="main">
     <div class="container">
       <div class="cta-band reveal">
         <h2>Nog iets niet beantwoord?</h2>
-        <p class="lede">Bekijk de veelgestelde vragen, of bel of schrijf ons gewoon — we reageren snel.</p>
+        <p class="lede">Bekijk de veelgestelde vragen, of bel of schrijf ons gewoon. We reageren snel.</p>
         <div class="hero-cta" style="justify-content:center">
           <a class="btn btn-gold" href="/nl/veelgestelde-vragen/">Lees de veelgestelde vragen</a>
           <a class="btn btn-ghost" style="color:#F7F1E4;border-color:rgba(247,241,228,.35)" href="/nl/contact/">Neem contact op</a>
@@ -701,7 +701,7 @@ info_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/hotelinformatie/index.html",
-           "Hotelinformatie — Inchecken, Parkeren & Praktische Zaken | Hotel Mayflower Leiden",
+           "Hotelinformatie: Inchecken, Parkeren & Praktische Zaken | Hotel Mayflower Leiden",
            "Inchecken vanaf 15:00, late aankomst via de sleutelkluis, alleen pinnen, geen lift, parkeeropties en alles wat u verder wilt weten vóór uw verblijf bij Hotel Mayflower Leiden.",
            "/nl/hotelinformatie/", "/nl/hotelinformatie/", "/en/hotel-information/", info_body,
            crumb_ld(("Home", "/nl/"), ("Hotelinformatie", "/nl/hotelinformatie/")))
@@ -714,7 +714,7 @@ contact_body = f"""<main id="main">
       {crumbs(("Home", "/nl/"), ("Contact", None))}
       <p class="eyebrow">Contact</p>
       <h1>We horen graag van u</h1>
-      <p class="lede">Een vraag over uw verblijf, een bijzonder verzoek of hulp bij het plannen van uw bezoek — bel, mail of gebruik het formulier hieronder.</p>
+      <p class="lede">Een vraag over uw verblijf, een bijzonder verzoek of hulp bij het plannen van uw bezoek? Bel, mail of gebruik het formulier hieronder.</p>
     </div>
   </div>
 
@@ -762,7 +762,7 @@ contact_body = f"""<main id="main">
         </div>
         <div class="tile">
           <h3>Vanaf Leiden Centraal</h3>
-          <p>Verlaat het station aan de centrumzijde en volg de Stationsweg rechtdoor. Steek het water over, en na zo'n vijf minuten loopt u de Beestenmarkt op — de hotelingang ligt aan het plein.</p>
+          <p>Verlaat het station aan de centrumzijde en volg de Stationsweg rechtdoor. Steek het water over, en na zo'n vijf minuten loopt u de Beestenmarkt op. De hotelingang ligt aan het plein.</p>
           <p style="margin-top:.6rem"><strong>Komt u na 18:00 uur aan?</strong> Regel vooraf de sleutelkluis met ons en kom binnen wanneer het u uitkomt.</p>
         </div>
       </div>
@@ -783,7 +783,7 @@ contact_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/contact/index.html",
-           "Contact — Hotel Mayflower Leiden | Beestenmarkt 2",
+           "Contact | Hotel Mayflower Leiden, Beestenmarkt 2",
            "Contact met Hotel Mayflower in Leiden: +31 71 514 2641, info@hotelmayflower.nl, Beestenmarkt 2. Routebeschrijving vanaf Leiden Centraal en aankomstinformatie.",
            "/nl/contact/", "/nl/contact/", "/en/contact/", contact_body,
            crumb_ld(("Home", "/nl/"), ("Contact", "/nl/contact/")))
@@ -792,25 +792,25 @@ write_page("nl", "nl/contact/index.html",
 # ---------------- Veelgestelde vragen ----------------
 faqs = [
     ("Serveert het hotel ontbijt?",
-     "Op dit moment niet — het ontbijt is tijdelijk niet beschikbaar vanwege renovatiewerkzaamheden. Op korte loopafstand van het hotel vindt u diverse goede cafés en ontbijtgelegenheden; onze favorieten staan op de pagina hotelinformatie. Zat ontbijt bij uw boeking of heeft u vooruitbetaald, dan wordt dat bedrag terugbetaald."),
+     "Op dit moment niet. Het ontbijt is tijdelijk niet beschikbaar vanwege renovatiewerkzaamheden. Op korte loopafstand van het hotel vindt u diverse goede cafés en ontbijtgelegenheden; onze favorieten staan op de pagina hotelinformatie. Was ontbijt bij uw boeking inbegrepen of heeft u vooruitbetaald, dan wordt dat bedrag terugbetaald."),
     ("Hoe laat kan ik inchecken?",
-     "Inchecken kan van 15:00 tot 18:00 uur. Eerder aankomen mag — uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten."),
+     "Inchecken kan van 15:00 tot 18:00 uur. Eerder aankomen mag: uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten."),
     ("Kan ik na 18:00 uur aankomen?",
      "Ja. Laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Met uw sleutel heeft u tijdens uw verblijf 24/7 toegang tot het hotel."),
     ("Hoe laat is het uitchecken?",
      "Uitchecken doet u uiterlijk om 10:30 uur. Daarna kunt u uw bagage tussen 09:00 en 18:00 uur bij ons achterlaten."),
     ("Heeft het hotel een lift?",
-     "Nee. Ons historische gebouw heeft geen lift — alle kamers zijn via de trap bereikbaar. Is traplopen voor u lastig, neem dan vóór het boeken contact met ons op."),
+     "Nee. Ons historische gebouw heeft geen lift; alle kamers zijn via de trap bereikbaar. Is traplopen voor u lastig, neem dan vóór het boeken contact met ons op."),
     ("Zijn huisdieren toegestaan?",
      "Nee, huisdieren zijn in Hotel Mayflower niet toegestaan."),
     ("Is er parkeergelegenheid?",
      "Het hotel heeft geen eigen parkeergelegenheid. Goede openbare opties in de buurt: parkeergarage Lammermarkt (± 3 minuten lopen), parkeergarage Morspoort en parkeerterrein Morssingel (beide ± 5 minuten), of het voordelige Stadsparkeerplan aan de Haagweg met gratis pendelbus die vlak bij het hotel stopt."),
     ("Welke betaalmethoden worden geaccepteerd?",
-     "Wij accepteren uitsluitend pinbetalingen — debit- en creditcards. Contant geld wordt niet geaccepteerd."),
+     "Wij accepteren uitsluitend pinbetalingen (debit- en creditcards). Contant geld wordt niet geaccepteerd."),
     ("Hoe ver is het hotel van Leiden Centraal?",
      "Ongeveer vijf minuten lopen. Verlaat het station aan de centrumzijde, volg de Stationsweg richting de stad en u loopt vanzelf de Beestenmarkt op."),
     ("Kan ik mijn bagage achterlaten vóór het inchecken?",
-     "Ja — u kunt uw bagage tussen 09:00 en 18:00 uur bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
+     "Ja. U kunt uw bagage tussen 09:00 en 18:00 uur bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
     ("Welke kamertypes zijn er?",
      "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),
 ]
@@ -836,7 +836,7 @@ faq_body = f"""<main id="main">
       {crumbs(("Home", "/nl/"), ("Veelgestelde vragen", None))}
       <p class="eyebrow">Vragen &amp; antwoorden</p>
       <h1>Veelgestelde vragen</h1>
-      <p class="lede">De korte, eerlijke antwoorden. Mist u iets? <a href="/nl/contact/">Stel uw vraag direct</a> — we reageren snel.</p>
+      <p class="lede">De korte, eerlijke antwoorden. Mist u iets? <a href="/nl/contact/">Stel uw vraag direct</a>; we reageren snel.</p>
     </div>
   </div>
   <section class="section" style="padding-top:0">
@@ -852,7 +852,7 @@ faq_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/veelgestelde-vragen/index.html",
-           "Veelgestelde Vragen — Hotel Mayflower Leiden",
+           "Veelgestelde Vragen | Hotel Mayflower Leiden",
            "Antwoorden op veelgestelde vragen over Hotel Mayflower Leiden: in- en uitchecktijden, late aankomst, ontbijt, parkeren, betalen, huisdieren en bagage.",
            None, "/nl/veelgestelde-vragen/", "/en/faq/", faq_body,
            crumb_ld(("Home", "/nl/"), ("Veelgestelde vragen", "/nl/veelgestelde-vragen/")) + faq_jsonld)
@@ -880,7 +880,7 @@ privacy_body = f"""<main id="main">
       <p>De interactieve kaart op de locatie- en contactpagina wordt <em>pas geladen van Google Maps nadat u dat toestaat</em>. Vanaf dat moment kan Google uw IP-adres verwerken en eigen cookies plaatsen; zie het <a href="https://policies.google.com/privacy?hl=nl" rel="noopener">privacybeleid van Google</a>. Staat u de kaart niet toe, dan wordt er niets van Google geladen.</p>
 
       <h2>Reserveren</h2>
-      <p>Reserveringen verlopen via onze boekingspagina, die wordt verzorgd door SiteMinder (The Booking Button). De gegevens die u daar invult — naam, contactgegevens, verblijfsdata, betaalgegevens — worden verwerkt om uw reservering te sluiten en te beheren. Betaalgegevens worden verwerkt door het boekingsplatform en zijn betaalproviders; deze website ontvangt of bewaart ze nooit.</p>
+      <p>Reserveringen verlopen via onze boekingspagina, die wordt verzorgd door SiteMinder (The Booking Button). De gegevens die u daar invult (naam, contactgegevens, verblijfsdata, betaalgegevens) worden verwerkt om uw reservering te sluiten en te beheren. Betaalgegevens worden verwerkt door het boekingsplatform en zijn betaalproviders; deze website ontvangt of bewaart ze nooit.</p>
 
       <h2>Contact</h2>
       <p>Mailt u ons of gebruikt u het contactformulier, dan gebruiken wij uw gegevens uitsluitend om u te antwoorden. Wij bewaren correspondentie niet langer dan daarvoor en voor onze administratie nodig is.</p>
@@ -894,7 +894,7 @@ privacy_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/privacy/index.html",
-           "Privacy- & Cookiebeleid — Hotel Mayflower Leiden",
+           "Privacy- & Cookiebeleid | Hotel Mayflower Leiden",
            "Hoe Hotel Mayflower Leiden met uw gegevens omgaat: geen trackingcookies, alleen functionele voorkeuren, kaart op basis van toestemming en uw AVG-rechten.",
            None, "/nl/privacy/", "/en/privacy/", privacy_body,
            crumb_ld(("Home", "/nl/"), ("Privacy & cookies", "/nl/privacy/")))
@@ -916,7 +916,7 @@ terms_body = f"""<main id="main">
       <p>Reserveringen komen tot stand via onze boekingspagina en vallen onder de daar getoonde tariefvoorwaarden op het moment van boeken, inclusief het geldende annuleringsbeleid. Wij accepteren uitsluitend pinbetalingen; contant geld wordt in het hotel niet geaccepteerd.</p>
 
       <h2>Aankomst en vertrek</h2>
-      <p>Inchecken kan van 15:00 tot 18:00 uur; aankomst na 18:00 uur is mogelijk via onze sleutelkluis, mits vooraf afgesproken. Uitchecken uiterlijk om 10:30 uur. Hotelsleutels blijven eigendom van het hotel — lever ze bij vertrek in bij de receptie.</p>
+      <p>Inchecken kan van 15:00 tot 18:00 uur; aankomst na 18:00 uur is mogelijk via onze sleutelkluis, mits vooraf afgesproken. Uitchecken uiterlijk om 10:30 uur. Hotelsleutels blijven eigendom van het hotel; lever ze bij vertrek in bij de receptie.</p>
 
       <h2>Huisregels</h2>
       <ul>
@@ -939,7 +939,7 @@ terms_body = f"""<main id="main">
 </main>
 """
 write_page("nl", "nl/voorwaarden/index.html",
-           "Algemene Voorwaarden — Hotel Mayflower Leiden",
+           "Algemene Voorwaarden | Hotel Mayflower Leiden",
            "Boekingsvoorwaarden en huisregels van Hotel Mayflower Leiden: betalen, aankomst en vertrek, rookvrij beleid en aansprakelijkheid.",
            None, "/nl/voorwaarden/", "/en/terms/", terms_body,
            crumb_ld(("Home", "/nl/"), ("Algemene voorwaarden", "/nl/voorwaarden/")))

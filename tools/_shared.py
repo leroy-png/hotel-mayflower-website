@@ -16,7 +16,7 @@ NAV = {
 
 STR = {
     "en": dict(skip="Skip to content", book="Book now", menu="Menu",
-               theme="Switch between dark and light mode", brand_home="Hotel Mayflower — home",
+               theme="Switch between dark and light mode", brand_home="Hotel Mayflower home",
                footer_tag="A welcoming two-star hotel in the historic heart of Leiden, five minutes on foot from Leiden Central Station.",
                visit="Visit", contact="Contact", direct="Book direct", check="Check availability",
                faq_label="FAQ", leiden_label="Leiden & location", info_label="Hotel information",
@@ -28,7 +28,7 @@ STR = {
                cookie="This site stores only your preferences (theme, language) on your own device. The interactive map loads from Google Maps once you allow it.",
                cookie_yes="Allow map", cookie_no="Essentials only"),
     "nl": dict(skip="Naar de inhoud", book="Boek nu", menu="Menu",
-               theme="Wissel tussen donkere en lichte weergave", brand_home="Hotel Mayflower — startpagina",
+               theme="Wissel tussen donkere en lichte weergave", brand_home="Hotel Mayflower startpagina",
                footer_tag="Een gastvrij tweesterrenhotel in het historische hart van Leiden, op vijf minuten lopen van Leiden Centraal.",
                visit="Ontdek", contact="Contact", direct="Direct boeken", check="Beschikbaarheid bekijken",
                faq_label="Veelgestelde vragen", leiden_label="Leiden & omgeving", info_label="Hotelinformatie",
