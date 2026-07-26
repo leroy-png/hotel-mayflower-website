@@ -250,15 +250,15 @@ info_body = f"""<main id="main">
     <div class="container grid grid-2">
       <div class="tile reveal">
         <h3>Check-in</h3>
-        <p>Check-in is from <strong>15:00 to 18:00</strong>. Arriving earlier in the day? You are welcome — your room is ready from 15:00, and until then you can leave your luggage with us at the reception.</p>
+        <p>Check-in is from <strong>15:00 to 18:00</strong>. Our reception is open from <strong>09:00 to 18:00</strong> — arriving earlier in the day? You are welcome: your room is ready from 15:00, and until then you can leave your luggage with us at the reception.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Arriving after 18:00</h3>
-        <p>No problem, as long as we know in advance: we place your key in our key locker so you can let yourself in at any hour. Please call or email us before your arrival day to arrange this.</p>
+        <p>No problem, as long as we know in advance: we place your key in our key locker so you can let yourself in at any hour. Please call or email us before your arrival day to arrange this. Once you have your key, you can come and go around the clock — the hotel is accessible to guests 24/7.</p>
       </div>
       <div class="tile reveal">
         <h3>Check-out</h3>
-        <p>Check-out is by <strong>10:30</strong>. Later train or flight? You can leave your luggage at the reception during staffed hours (at your own risk) and enjoy a last stroll through Leiden.</p>
+        <p>Check-out is by <strong>10:30</strong>. Later train or flight? You can leave your luggage at the reception between 09:00 and 18:00 (at your own risk) and enjoy a last stroll through Leiden.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Payments</h3>
@@ -406,6 +406,7 @@ contact_body = f"""<main id="main">
           <p>Beestenmarkt 2<br>2312 CC Leiden<br>The Netherlands</p>
           <p><a href="tel:+31715142641">+31 71 514 2641</a><br>
           <a href="mailto:info@hotelmayflower.nl">info@hotelmayflower.nl</a></p>
+          <p>Reception open 09:00–18:00 · guests have 24/7 access with their own key.</p>
         </div>
         <div class="tile">
           <h3>From Leiden Central Station</h3>
@@ -443,9 +444,9 @@ faqs = [
     ("What time is check-in?",
      "Check-in is from 15:00 to 18:00. You are welcome to arrive earlier — your room is ready from 15:00, and until then you can leave your luggage with us at the reception."),
     ("Can I arrive after 18:00?",
-     "Yes. Let us know in advance and we place your key in our key locker, so you can let yourself in at any hour. Call or email us before your arrival day to arrange it."),
+     "Yes. Let us know in advance and we place your key in our key locker, so you can let yourself in at any hour. Call or email us before your arrival day to arrange it. With your key you have 24/7 access to the hotel throughout your stay."),
     ("What time is check-out?",
-     "Check-out is by 10:30. You are welcome to leave your luggage at the reception during staffed hours afterwards."),
+     "Check-out is by 10:30. You are welcome to leave your luggage at the reception afterwards, between 09:00 and 18:00."),
     ("Does the hotel have an elevator?",
      "No. Our historic building does not have an elevator — all rooms are reached by stairs. If stairs are difficult for you, please contact us before booking."),
     ("Are pets permitted?",
@@ -457,7 +458,7 @@ faqs = [
     ("How far is the hotel from Leiden Central Station?",
      "About five minutes on foot. Leave the station on the centre side, follow Stationsweg towards the city, and you will walk straight onto the Beestenmarkt."),
     ("Can I leave my luggage before check-in?",
-     "Yes — you can leave your luggage at the reception during staffed hours, at your own risk. That way you can start exploring Leiden straight away."),
+     "Yes — you can leave your luggage at the reception between 09:00 and 18:00, at your own risk. That way you can start exploring Leiden straight away."),
     ("Which room types are available?",
      "We offer single, double and triple rooms, each with a private bathroom, free Wi-Fi, a television and tea &amp; coffee facilities. Views and balconies vary per room and depend on availability."),
 ]

@@ -5,10 +5,11 @@ or intentionally left out, in priority order.
 
 ## Blocking questions (answer before/at launch)
 
-1. **Reception staffed hours.** Your documents conflict: the welcome letter says
-   07:00–21:00, the printed room guide says 09:00–18:00. The site currently
-   avoids naming reception hours (it says "during staffed hours" for luggage).
-   Confirm the real hours and I add them to Hotel information + Contact.
+1. ~~Reception staffed hours.~~ **Resolved 2026-07-26:** reception is open
+   09:00–18:00 and guests have 24/7 building access with their own key — now
+   stated on Hotel information, Contact and FAQ in both languages. Note: the
+   printed welcome letter still says 07:00–21:00; update that print item to
+   match.
 2. **Key-locker wording.** The site says: arrange in advance → key in the locker →
    let yourself in. Confirm this matches the actual procedure (and whether the
    locker is by the entrance or across from reception).

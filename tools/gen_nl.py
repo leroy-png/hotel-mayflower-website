@@ -274,7 +274,7 @@ home_body = f"""<main id="main">
         </details>
         <details class="faq-item">
           <summary>Kan ik na 18:00 uur aankomen?</summary>
-          <div class="faq-a"><p>Ja — laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen.</p></div>
+          <div class="faq-a"><p>Ja — laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Met uw sleutel heeft u tijdens uw verblijf 24/7 toegang tot het hotel.</p></div>
         </details>
       </div>
       <div class="center" style="margin-top:2rem">
@@ -602,15 +602,15 @@ info_body = f"""<main id="main">
     <div class="container grid grid-2">
       <div class="tile reveal">
         <h3>Inchecken</h3>
-        <p>Inchecken kan van <strong>15:00 tot 18:00 uur</strong>. Bent u eerder in de stad? Van harte welkom — uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten.</p>
+        <p>Inchecken kan van <strong>15:00 tot 18:00 uur</strong>. Onze receptie is geopend van <strong>09:00 tot 18:00 uur</strong> — bent u eerder in de stad? Van harte welkom: uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Aankomst na 18:00 uur</h3>
-        <p>Geen probleem, mits vooraf afgesproken: wij leggen uw sleutel in onze sleutelkluis, zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen.</p>
+        <p>Geen probleem, mits vooraf afgesproken: wij leggen uw sleutel in onze sleutelkluis, zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen. Met uw sleutel kunt u vervolgens dag en nacht in en uit — het hotel is voor gasten 24/7 toegankelijk.</p>
       </div>
       <div class="tile reveal">
         <h3>Uitchecken</h3>
-        <p>Uitchecken doet u uiterlijk om <strong>10:30 uur</strong>. Latere trein of vlucht? U kunt uw bagage tijdens de bemande receptietijden bij ons achterlaten (op eigen risico) en nog even van Leiden genieten.</p>
+        <p>Uitchecken doet u uiterlijk om <strong>10:30 uur</strong>. Latere trein of vlucht? U kunt uw bagage tussen 09:00 en 18:00 uur bij ons achterlaten (op eigen risico) en nog even van Leiden genieten.</p>
       </div>
       <div class="tile reveal reveal-d1">
         <h3>Betalen</h3>
@@ -758,6 +758,7 @@ contact_body = f"""<main id="main">
           <p>Beestenmarkt 2<br>2312 CC Leiden<br>Nederland</p>
           <p><a href="tel:+31715142641">+31 71 514 2641</a><br>
           <a href="mailto:info@hotelmayflower.nl">info@hotelmayflower.nl</a></p>
+          <p>Receptie geopend 09:00–18:00 uur · gasten hebben met hun eigen sleutel 24/7 toegang.</p>
         </div>
         <div class="tile">
           <h3>Vanaf Leiden Centraal</h3>
@@ -795,9 +796,9 @@ faqs = [
     ("Hoe laat kan ik inchecken?",
      "Inchecken kan van 15:00 tot 18:00 uur. Eerder aankomen mag — uw kamer staat vanaf 15:00 uur klaar, en tot die tijd kunt u uw bagage bij de receptie achterlaten."),
     ("Kan ik na 18:00 uur aankomen?",
-     "Ja. Laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Bel of mail ons vóór uw aankomstdag om dit te regelen."),
+     "Ja. Laat het ons vooraf weten, dan leggen wij uw sleutel in onze sleutelkluis zodat u op elk moment naar binnen kunt. Met uw sleutel heeft u tijdens uw verblijf 24/7 toegang tot het hotel."),
     ("Hoe laat is het uitchecken?",
-     "Uitchecken doet u uiterlijk om 10:30 uur. Daarna kunt u uw bagage tijdens de bemande receptietijden bij ons achterlaten."),
+     "Uitchecken doet u uiterlijk om 10:30 uur. Daarna kunt u uw bagage tussen 09:00 en 18:00 uur bij ons achterlaten."),
     ("Heeft het hotel een lift?",
      "Nee. Ons historische gebouw heeft geen lift — alle kamers zijn via de trap bereikbaar. Is traplopen voor u lastig, neem dan vóór het boeken contact met ons op."),
     ("Zijn huisdieren toegestaan?",
@@ -809,7 +810,7 @@ faqs = [
     ("Hoe ver is het hotel van Leiden Centraal?",
      "Ongeveer vijf minuten lopen. Verlaat het station aan de centrumzijde, volg de Stationsweg richting de stad en u loopt vanzelf de Beestenmarkt op."),
     ("Kan ik mijn bagage achterlaten vóór het inchecken?",
-     "Ja — u kunt uw bagage tijdens de bemande receptietijden bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
+     "Ja — u kunt uw bagage tussen 09:00 en 18:00 uur bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
     ("Welke kamertypes zijn er?",
      "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),
 ]
