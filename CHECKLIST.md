@@ -44,8 +44,16 @@ or intentionally left out, in priority order.
 
 ## Hosting & domain (when you're ready to go live)
 
-15. Choose a static host (Netlify / Cloudflare Pages recommended), point the
-    hotelmayflower.nl DNS at it, deploy this folder.
+15. **Preview is live** (since 2026-07-27) at
+    https://leroy-png.github.io/hotel-mayflower-website/ — every push to
+    `main` on GitHub redeploys automatically. The current hotelmayflower.nl
+    runs WordPress on a Plesk server; the safest go-live is to upload this
+    static site to the Plesk webspace (httpdocs), replacing the WordPress
+    site, so DNS and email stay untouched. Steps: in Plesk File Manager,
+    back up/rename `httpdocs`, upload the site files (everything except
+    `tools/`, `docs/`, `.github/`), done. Alternative: point DNS at GitHub
+    Pages with a CNAME — but the Plesk route touches nothing outside the
+    webspace.
 16. Submit `sitemap.xml` in Google Search Console; claim/refresh the Google
     Business Profile so Maps shows the new site.
 17. After launch, verify the booking deep-link opens with dates prefilled from
