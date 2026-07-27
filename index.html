@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Mayflower Leiden</title>
+<meta name="robots" content="noindex">
+<link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/">
+<link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/">
+<link rel="alternate" hreflang="x-default" href="https://www.hotelmayflower.nl/en/">
+<link rel="icon" href="/assets/logo/favicon-32.png" type="image/png">
+<script>
+(function () {
+  // Send the visitor to their language: remembered choice first, browser language second.
+  var lang = null;
+  try { lang = localStorage.getItem("hm-lang"); } catch (e) {}
+  if (lang !== "en" && lang !== "nl") {
+    lang = (navigator.language || "").toLowerCase().indexOf("nl") === 0 ? "nl" : "en";
+  }
+  location.replace("/" + lang + "/");
+})();
+</script>
+<style>
+  body { margin: 0; display: grid; place-content: center; min-height: 100svh; background: #0D0F14;
+         font-family: Georgia, serif; color: #F1ECDF; text-align: center; }
+  a { color: #CCA854; }
+</style>
+</head>
+<body>
+<noscript>
+  <p><img src="/assets/logo/beeldmerk_gold.svg" alt="Hotel Mayflower" width="80"></p>
+  <h1>Hotel Mayflower, Leiden</h1>
+  <p><a href="/en/">Continue in English</a> · <a href="/nl/">Verder in het Nederlands</a></p>
+</noscript>
+</body>
+</html>

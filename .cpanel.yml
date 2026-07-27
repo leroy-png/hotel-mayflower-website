@@ -1,0 +1,9 @@
+---
+# cPanel Git deployment: copies the site into the webspace.
+# Runs when you click "Deploy HEAD Commit" (or via automated deploy).
+# If $HOME does not expand on your host, replace it with /home/<cpanel-user>.
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/hotel
+    - /bin/mkdir -p $DEPLOYPATH
+    - /usr/bin/rsync -a --delete --exclude=.git --exclude=.cpanel.yml ./ $DEPLOYPATH/
