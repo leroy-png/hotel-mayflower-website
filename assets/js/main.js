@@ -87,10 +87,17 @@
     var guests = form.querySelector('[name="guests"]');
 
     var today = new Date();
-    var iso = function (d) { return d.toISOString().slice(0, 10); };
+    /* local date, not toISOString(): UTC would shift the day around midnight */
+    var iso = function (d) {
+      var p = function (n) { return (n < 10 ? "0" : "") + n; };
+      return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+    };
     ci.min = iso(today);
     var tomorrow = new Date(today.getTime() + 864e5);
     co.min = iso(tomorrow);
+    /* Prefill: iOS Safari shows an empty date input as a blank box */
+    if (!ci.value) ci.value = iso(today);
+    if (!co.value) co.value = iso(tomorrow);
 
     ci.addEventListener("change", function () {
       if (ci.value) {
