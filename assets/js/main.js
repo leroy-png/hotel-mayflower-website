@@ -97,7 +97,10 @@
     co.min = iso(tomorrow);
     /* Prefill: iOS Safari shows an empty date input as a blank box */
     if (!ci.value) ci.value = iso(today);
-    if (!co.value) co.value = iso(tomorrow);
+    if (!co.value || co.value <= ci.value) {
+      var after = new Date(ci.value);
+      co.value = iso(new Date(after.getTime() + 864e5));
+    }
 
     ci.addEventListener("change", function () {
       if (ci.value) {

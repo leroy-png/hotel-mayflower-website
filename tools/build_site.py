@@ -16,16 +16,21 @@ OUT = os.path.join(ROOT, "_site")
 COPY = ["en", "nl", "assets", "index.html", "404.html", "robots.txt", "sitemap.xml"]
 
 
-def rewrite_html(path, base):
+def rewrite_html(path, base, version):
     with open(path, encoding="utf-8") as f:
         html = f.read()
-    # href="/...", src="/..." and srcset="/..." (leaves https:// and protocol-relative // alone)
-    html = re.sub(r'(href|src|srcset|poster)="/(?!/)', rf'\1="{base}/', html)
-    # additional srcset candidates after a comma: ", /assets/img/x-960.webp 960w"
-    html = re.sub(r'(,\s*)/(assets/)', rf'\1{base}/\2', html)
-    # language redirect on the root page
-    html = html.replace('location.replace("/" + lang + "/")',
-                        f'location.replace("{base}/" + lang + "/")')
+    if base:
+        # href="/...", src="/..." and srcset="/..." (leaves https:// and protocol-relative // alone)
+        html = re.sub(r'(href|src|srcset|poster)="/(?!/)', rf'\1="{base}/', html)
+        # additional srcset candidates after a comma: ", /assets/img/x-960.webp 960w"
+        html = re.sub(r'(,\s*)/(assets/)', rf'\1{base}/\2', html)
+        # language redirect on the root page
+        html = html.replace('location.replace("/" + lang + "/")',
+                            f'location.replace("{base}/" + lang + "/")')
+    if version:
+        # cache-bust CSS/JS: browsers cache Pages assets for 10 min, phones often longer
+        html = html.replace("/assets/css/main.css", f"/assets/css/main.css?v={version}")
+        html = html.replace("/assets/js/main.js", f"/assets/js/main.js?v={version}")
     with open(path, "w", encoding="utf-8") as f:
         f.write(html)
 
@@ -33,7 +38,10 @@ def rewrite_html(path, base):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default="", help="path prefix, e.g. /hotel-mayflower-website")
-    base = ap.parse_args().base.rstrip("/")
+    ap.add_argument("--version", default="", help="cache-bust token for CSS/JS (e.g. commit SHA)")
+    args = ap.parse_args()
+    base = args.base.rstrip("/")
+    version = args.version[:8]
 
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
@@ -47,13 +55,13 @@ def main():
             shutil.copy2(src, dst)
 
     n = 0
-    if base:
+    if base or version:
         for dirpath, _dirs, files in os.walk(OUT):
             for name in files:
                 if name.endswith(".html"):
-                    rewrite_html(os.path.join(dirpath, name), base)
+                    rewrite_html(os.path.join(dirpath, name), base, version)
                     n += 1
-    print(f"built _site/ (base={base or '(none)'}; {n} pages rewritten)")
+    print(f"built _site/ (base={base or '(none)'}, v={version or '(none)'}; {n} pages rewritten)")
 
 
 if __name__ == "__main__":

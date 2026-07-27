@@ -367,6 +367,7 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 .booking-bar > *, .booking-bar .field > * { min-width: 0; }
 .booking-bar input[type="date"] {
   -webkit-appearance: none; appearance: none; display: block;
+  height: 3rem; max-width: 100%; text-align: left;
 }
 .booking-bar input[type="date"]::-webkit-date-and-time-value {
   text-align: left; min-height: 1.35rem; line-height: 1.35rem; margin: 0;
