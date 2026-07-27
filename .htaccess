@@ -1,0 +1,6 @@
+# Hotel Mayflower static site
+# Never serve version-control or deploy files
+RedirectMatch 404 (?i)/\.(git|cpanel)
+Options -Indexes
+ErrorDocument 404 /404.html
+AddDefaultCharset utf-8
