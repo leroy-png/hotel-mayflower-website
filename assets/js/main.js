@@ -10,7 +10,7 @@
   /* ---------- Configuration ---------- */
   // Contact form: paste a form endpoint here (e.g. Formspree/Basin URL) to switch
   // from the mailto fallback to a real POST. See CONTENT-GUIDE.md.
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "/contact.php";
   var BOOKING_URL = "https://direct-book.com/properties/HotelMayflowerDirect";
 
   /* ---------- Theme toggle (initial theme is set inline in <head>) ---------- */

@@ -27,8 +27,11 @@ or intentionally left out, in priority order.
    genuine quotes (Google/Booking.com, with reviewer consent) per language.
 7. **Social media URLs** — the footer currently has no social links; send the
    Facebook/Instagram URLs and they go in.
-8. **Contact-form endpoint** — form falls back to the visitor's email app until
-   you create a form service account (2 minutes, see CONTENT-GUIDE.md).
+8. ~~Contact-form endpoint~~ **Resolved 2026-07-27:** the site now ships its
+   own `contact.php` on the cPanel server; submissions are emailed to
+   info@hotelmayflower.nl (honeypot spam filter included). Note: the form on
+   the GitHub Pages preview URL shows the error message by design — PHP only
+   runs on the real server.
 9. **Terrace** — photos excluded on your instruction (not presentable yet). When
    ready: shoot 2–3 photos, confirm whether smoking is allowed there, and it gets
    a section on Home + Hotel information.
