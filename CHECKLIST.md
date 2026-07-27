@@ -46,14 +46,16 @@ or intentionally left out, in priority order.
 
 15. **Preview is live** (since 2026-07-27) at
     https://leroy-png.github.io/hotel-mayflower-website/ — every push to
-    `main` redeploys automatically. **Production route (Plesk):** every push
-    also builds a clean production copy on the `plesk-deploy` branch
-    (site files only, cache-busted assets). In Plesk: Git → Add repository →
-    `https://github.com/leroy-png/hotel-mayflower-website.git`, branch
-    `plesk-deploy`, deploy to the webspace, automatic deployment on. Tip:
-    deploy to a test subdomain first; move the WordPress site aside before
-    pointing the main webspace at it. Leroy transfers the domain to his own
-    server.
+    `main` redeploys automatically. **Production route (cPanel):** every push
+    also builds a clean production copy on the `production` branch (site
+    files only, cache-busted assets, `.cpanel.yml` included). In cPanel:
+    Git Version Control → Create → clone
+    `https://github.com/leroy-png/hotel-mayflower-website.git` to a
+    repository path outside public_html, checked-out branch `production`,
+    then Pull or Deploy → Deploy HEAD Commit copies the site to
+    `~/public_html/hotel` (test subdomain hotel.themayflower.nl). For the
+    real go-live, change DEPLOYPATH in `.cpanel.yml` (or add a second task)
+    once the hotelmayflower.nl domain is transferred to the server.
 16. Submit `sitemap.xml` in Google Search Console; claim/refresh the Google
     Business Profile so Maps shows the new site.
 17. After launch, verify the booking deep-link opens with dates prefilled from

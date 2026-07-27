@@ -37,9 +37,10 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
-  # Production build for the Plesk server: no base path, cache-busted assets.
-  # Plesk's Git extension pulls the plesk-deploy branch into the webspace.
-  plesk-branch:
+  # Production build for the cPanel server: no base path, cache-busted assets.
+  # cPanel's Git Version Control clones the production branch; .cpanel.yml
+  # (included in the build) copies the files into public_html/hotel.
+  production-branch:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -47,14 +48,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build production site
         run: python3 tools/build_site.py --version "${{ github.sha }}"
-      - name: Push to plesk-deploy branch
+      - name: Push to production branch
         run: |
           cd _site
-          git init -b plesk-deploy
+          git init -b production
           git add -A
           git -c user.name="github-actions[bot]" \
               -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
               commit -m "Deploy ${GITHUB_SHA:0:8}"
           git push --force \
             "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
-            plesk-deploy
+            production
