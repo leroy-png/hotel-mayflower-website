@@ -1,4 +1,8 @@
 # Hotel Mayflower static site
+# Neutralize rewrite rules inherited from the parent folder (main-site WordPress
+# rules otherwise send missing files to a non-existent index.php -> 500)
+RewriteEngine On
+
 # Never serve version-control or deploy files
 RedirectMatch 404 (?i)/\.(git|cpanel)
 Options -Indexes
