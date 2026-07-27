@@ -36,3 +36,25 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Production build for the Plesk server: no base path, cache-busted assets.
+  # Plesk's Git extension pulls the plesk-deploy branch into the webspace.
+  plesk-branch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build production site
+        run: python3 tools/build_site.py --version "${{ github.sha }}"
+      - name: Push to plesk-deploy branch
+        run: |
+          cd _site
+          git init -b plesk-deploy
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Deploy ${GITHUB_SHA:0:8}"
+          git push --force \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
+            plesk-deploy
