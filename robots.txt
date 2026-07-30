@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Disallow: /en/preview-hero/
+
 Sitemap: https://www.hotelmayflower.nl/sitemap.xml
