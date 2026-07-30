@@ -38,11 +38,10 @@ or intentionally left out, in priority order.
 
 ## Photo wishlist (site works, but these would lift it)
 
-10. ~~Bathroom~~ **Added 2026-07-30** on the triple-room page (from your
-    `trippel` folder). **Question:** the photo shows a bath — do all triple
-    rooms have a bath, or only some? Confirm and I make the caption specific
-    (now neutral: "A private bathroom, with fresh towels"). A bathroom photo
-    for the single and double rooms is still welcome.
+10. ~~Bathroom~~ **Added 2026-07-30**, on all three room pages. You confirmed
+    **every room has a private bathroom with a bath**, so this is now stated in
+    the facility lists, the photo captions and the structured data. More
+    bathroom photos (per room type) are still welcome for variety.
 11. ~~A true single room~~ **Added 2026-07-30** (room 20) — single, double and
     triple pages plus the home/overview cards now all use your new photos.
     Note: one double-room photo was left out because the ceiling shows a

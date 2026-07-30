@@ -55,7 +55,7 @@ hotel_ld = f"""<script type="application/ld+json">
   "paymentAccepted": "Credit card, debit card",
   "amenityFeature": [
     {{ "@type": "LocationFeatureSpecification", "name": "Gratis wifi", "value": true }},
-    {{ "@type": "LocationFeatureSpecification", "name": "Eigen badkamer", "value": true }},
+    {{ "@type": "LocationFeatureSpecification", "name": "Eigen badkamer met ligbad", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Televisie", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Thee- en koffiefaciliteiten", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Lift", "value": false }}
@@ -139,7 +139,7 @@ home_body = f"""<main id="main">
       <div class="center reveal">
         <p class="eyebrow">Onze kamers</p>
         <h2>Eenvoudig, comfortabel, van u</h2>
-        <p class="lede">Elke kamer heeft een eigen badkamer, gratis wifi, een televisie en thee- en koffiefaciliteiten.</p>
+        <p class="lede">Elke kamer heeft een eigen badkamer met ligbad, gratis wifi, een televisie en thee- en koffiefaciliteiten.</p>
       </div>
       <div class="grid grid-3" style="margin-top:3rem">
         <article class="card reveal">
@@ -314,7 +314,7 @@ kamers_body = f"""<main id="main">
       {crumbs(("Home", "/nl/"), ("Kamers", None))}
       <p class="eyebrow">Onze kamers</p>
       <h1>Kamers met Leiden voor het raam</h1>
-      <p class="lede">Tweeëntwintig kamers in een karakteristiek historisch pand aan de Beestenmarkt. Niets wat u niet nodig heeft, alles wat u wél nodig heeft: een comfortabel bed, een eigen badkamer, gratis wifi, een televisie en thee- en koffiefaciliteiten.</p>
+      <p class="lede">Tweeëntwintig kamers in een karakteristiek historisch pand aan de Beestenmarkt. Niets wat u niet nodig heeft, alles wat u wél nodig heeft: een comfortabel bed, een eigen badkamer met ligbad, gratis wifi, een televisie en thee- en koffiefaciliteiten.</p>
     </div>
   </div>
 
@@ -393,14 +393,14 @@ kamers_body = f"""<main id="main">
 """
 write_page("nl", "nl/kamers/index.html",
            "Kamers: Eenpersoons, Tweepersoons & Driepersoons | Hotel Mayflower Leiden",
-           "Eenpersoons-, tweepersoons- en driepersoonskamers in het centrum van Leiden, elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten.",
+           "Eenpersoons-, tweepersoons- en driepersoonskamers in het centrum van Leiden, elk met eigen badkamer met ligbad, gratis wifi, televisie en thee- en koffiefaciliteiten.",
            "/nl/kamers/", "/nl/kamers/", "/en/rooms/", kamers_body,
            crumb_ld(("Home", "/nl/"), ("Kamers", "/nl/kamers/")))
 
 
 # ---------------- Kamerpagina's ----------------
 ROOM_FACTS_NL = """<ul class="card-meta" style="font-size:1rem;gap:.6rem 1.4rem">
-  <li>✓ Eigen badkamer</li>
+  <li>✓ Eigen badkamer met ligbad</li>
   <li>✓ Gratis wifi</li>
   <li>✓ Televisie</li>
   <li>✓ Thee- en koffiefaciliteiten</li>
@@ -468,10 +468,11 @@ kamer_page(
      "Sommige kamers kijken uit over de daken van de oude stad; stuk voor stuk bieden ze dezelfde rustige basis."],
     [("room-single-overview", "Lichte eenpersoonskamer met bed, bureau en raam"),
      ("room-single-bed", "Een comfortabel bed bij het raam"),
-     ("room-single-desk", "Bureau met thee- en koffiefaciliteiten en televisie")],
+     ("room-single-desk", "Bureau met thee- en koffiefaciliteiten en televisie"),
+     ("room-bathroom-tub", "Elke kamer heeft een eigen badkamer met ligbad")],
     "single",
     "Eenpersoonskamer | Hotel Mayflower Leiden",
-    "Compacte eenpersoonskamer in het centrum van Leiden met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Boek direct.")
+    "Compacte eenpersoonskamer in het centrum van Leiden met eigen badkamer met ligbad, gratis wifi, televisie en thee- en koffiefaciliteiten. Boek direct.")
 
 kamer_page(
     "tweepersoonskamer", "Tweepersoonskamer", "Voor 2 personen · Onze meest geboekte kamer", 2,
@@ -481,7 +482,8 @@ kamer_page(
     [("room-double-overview", "Gerenoveerde tweepersoonskamer met bed, bureau en zithoek"),
      ("room-double-window-seating", "Zithoek bij het raam met uitzicht op het plein"),
      ("room-double-attic", "Tweepersoonskamer onder de schuine witte balken"),
-     ("room-double-twin", "Sommige tweepersoonskamers hebben twee losse bedden")],
+     ("room-double-twin", "Sommige tweepersoonskamers hebben twee losse bedden"),
+     ("room-bathroom-tub", "Elke kamer heeft een eigen badkamer met ligbad")],
     "double",
     "Tweepersoonskamer | Hotel Mayflower Leiden",
     "Tweepersoonskamer in hartje Leiden, sommige met uitzicht op de Beestenmarkt of balkon. Eigen badkamer, gratis wifi, televisie. Boek direct voor de beste prijs.")
@@ -493,7 +495,7 @@ kamer_page(
      "Een aantal driepersoonskamers is onlangs gerenoveerd; vraag bij het boeken gerust naar de actuele mogelijkheden."],
     [("room-triple-renovated", "Gerenoveerde driepersoonskamer met drie bedden"),
      ("room-triple-beds", "Driepersoonskamer met drie eenpersoonsbedden"),
-     ("room-bathroom-tub", "Een eigen badkamer, met verse handdoeken")],
+     ("room-bathroom-tub", "Elke kamer heeft een eigen badkamer met ligbad")],
     "triple",
     "Driepersoonskamer | Hotel Mayflower Leiden",
     "Driepersoonskamer met drie volwaardige bedden in het centrum van Leiden. Eigen badkamer, gratis wifi, televisie. Ideaal voor vrienden of gezin. Boek direct.")
@@ -811,7 +813,7 @@ faqs = [
     ("Kan ik mijn bagage achterlaten vóór het inchecken?",
      "Ja. U kunt uw bagage tussen 09:00 en 18:00 uur bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
     ("Welke kamertypes zijn er?",
-     "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),
+     "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer met ligbad, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),
 ]
 faq_items = "\n".join(
     f"""        <details class="faq-item"><summary>{q}</summary><div class="faq-a"><p>{a}</p></div></details>"""

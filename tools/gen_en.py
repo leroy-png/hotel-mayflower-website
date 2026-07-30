@@ -39,7 +39,7 @@ def room_ld(name, occupancy, path, desc):
   "url": "{DOMAIN}{path}",
   "occupancy": {{ "@type": "QuantitativeValue", "maxValue": {occupancy} }},
   "amenityFeature": [
-    {{ "@type": "LocationFeatureSpecification", "name": "Private bathroom", "value": true }},
+    {{ "@type": "LocationFeatureSpecification", "name": "Private bathroom with bath", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Television", "value": true }},
     {{ "@type": "LocationFeatureSpecification", "name": "Tea and coffee facilities", "value": true }}
@@ -51,7 +51,7 @@ def room_ld(name, occupancy, path, desc):
 
 
 ROOM_FACTS = """<ul class="card-meta" style="font-size:1rem;gap:.6rem 1.4rem">
-  <li>✓ Private bathroom</li>
+  <li>✓ Private bathroom with bath</li>
   <li>✓ Free Wi-Fi</li>
   <li>✓ Television</li>
   <li>✓ Tea &amp; coffee facilities</li>
@@ -122,7 +122,8 @@ room_page(
      "Some rooms look out over the rooftops of the old town; every one of them comes with the same quiet comfort."],
     [("room-single-overview", "Bright single room with bed, desk and window"),
      ("room-single-bed", "A comfortable bed by the window"),
-     ("room-single-desk", "Desk with tea and coffee facilities and a television")],
+     ("room-single-desk", "Desk with tea and coffee facilities and a television"),
+     ("room-bathroom-tub", "Every room has a private bathroom with a bath")],
     "eenpersoonskamer")
 
 room_page(
@@ -133,7 +134,8 @@ room_page(
     [("room-double-overview", "Renovated double room with bed, desk and seating corner"),
      ("room-double-window-seating", "Window seating with a view over the square"),
      ("room-double-attic", "Attic double room under the sloping white beams"),
-     ("room-double-twin", "Some double rooms have two separate beds")],
+     ("room-double-twin", "Some double rooms have two separate beds"),
+     ("room-bathroom-tub", "Every room has a private bathroom with a bath")],
     "tweepersoonskamer")
 
 room_page(
@@ -143,7 +145,7 @@ room_page(
      "Several triple rooms have been freshly renovated; ask us about the current options when you book."],
     [("room-triple-renovated", "Freshly renovated triple room with three beds"),
      ("room-triple-beds", "Triple room with three single beds"),
-     ("room-bathroom-tub", "A private bathroom, with fresh towels")],
+     ("room-bathroom-tub", "Every room has a private bathroom with a bath")],
     "driepersoonskamer")
 
 
@@ -459,7 +461,7 @@ faqs = [
     ("Can I leave my luggage before check-in?",
      "Yes. You can leave your luggage at the reception between 09:00 and 18:00, at your own risk. That way you can start exploring Leiden straight away."),
     ("Which room types are available?",
-     "We offer single, double and triple rooms, each with a private bathroom, free Wi-Fi, a television and tea &amp; coffee facilities. Views and balconies vary per room and depend on availability."),
+     "We offer single, double and triple rooms, each with a private bathroom with bath, free Wi-Fi, a television and tea &amp; coffee facilities. Views and balconies vary per room and depend on availability."),
 ]
 faq_items = "\n".join(
     f"""        <details class="faq-item"><summary>{q}</summary><div class="faq-a"><p>{a}</p></div></details>"""
