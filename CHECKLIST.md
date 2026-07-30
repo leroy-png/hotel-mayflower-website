@@ -38,8 +38,15 @@ or intentionally left out, in priority order.
 
 ## Photo wishlist (site works, but these would lift it)
 
-10. Bathroom (none supplied — rooms pages currently show no bathroom photo).
-11. A true single room.
+10. ~~Bathroom~~ **Added 2026-07-30** on the triple-room page (from your
+    `trippel` folder). **Question:** the photo shows a bath — do all triple
+    rooms have a bath, or only some? Confirm and I make the caption specific
+    (now neutral: "A private bathroom, with fresh towels"). A bathroom photo
+    for the single and double rooms is still welcome.
+11. ~~A true single room~~ **Added 2026-07-30** (room 20) — single, double and
+    triple pages plus the home/overview cards now all use your new photos.
+    Note: one double-room photo was left out because the ceiling shows a
+    water stain; worth a touch-up before re-shooting that room.
 12. Reception / entrance interior.
 13. Facade at dusk with the gold lettering lit.
 14. Optional: Higgsfield cinemagraph from the hero photo for extra hero motion —

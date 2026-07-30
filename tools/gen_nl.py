@@ -144,7 +144,7 @@ home_body = f"""<main id="main">
       <div class="grid grid-3" style="margin-top:3rem">
         <article class="card reveal">
           <div class="card-media">
-            {picture("view-window-seat", "Zithoekje bij het raam met uitzicht over de Beestenmarkt")}
+            {picture("room-single-overview", "Lichte eenpersoonskamer met bed, bureau en raam")}
           </div>
           <div class="card-body">
             <span class="card-kicker">Voor 1 persoon</span>
@@ -155,7 +155,7 @@ home_body = f"""<main id="main">
         </article>
         <article class="card reveal reveal-d1">
           <div class="card-media">
-            {picture("room-attic-double", "Tweepersoonskamer onder de balken met zithoek bij het raam")}
+            {picture("room-double-overview", "Gerenoveerde tweepersoonskamer met bed, bureau en zithoek")}
           </div>
           <div class="card-body">
             <span class="card-kicker">Voor 2 personen</span>
@@ -322,7 +322,7 @@ kamers_body = f"""<main id="main">
     <div class="container grid grid-3">
       <article class="card reveal">
         <div class="card-media">
-          {picture("view-window-seat", "Zithoekje bij het raam met uitzicht over de Beestenmarkt")}
+          {picture("room-single-overview", "Lichte eenpersoonskamer met bed, bureau en raam")}
         </div>
         <div class="card-body">
           <span class="card-kicker">Voor 1 persoon</span>
@@ -338,7 +338,7 @@ kamers_body = f"""<main id="main">
       </article>
       <article class="card reveal reveal-d1">
         <div class="card-media">
-          {picture("room-attic-double", "Tweepersoonskamer onder de balken met zithoek bij het raam")}
+          {picture("room-double-overview", "Gerenoveerde tweepersoonskamer met bed, bureau en zithoek")}
         </div>
         <div class="card-body">
           <span class="card-kicker">Voor 2 personen · Sommige met pleinzicht</span>
@@ -466,8 +466,9 @@ kamer_page(
     "Een compacte, rustige kamer voor wie alleen reist: een comfortabel bed, een eigen badkamer en heel Leiden voor de voordeur.",
     ["Alleen op pad voor werk, studie of een stedentrip? Onze eenpersoonskamers houden het eenvoudig: alles voor een goede nacht, niets dat in de weg staat. Zet uw tas neer, zet een kop thee en stap naar buiten: Leiden Centraal, de musea en de binnenstad liggen allemaal op korte loopafstand.",
      "Sommige kamers kijken uit over de daken van de oude stad; stuk voor stuk bieden ze dezelfde rustige basis."],
-    [("view-window-seat", "Zithoekje met uitzicht over de Beestenmarkt"),
-     ("room-attic-window", "Zithoek onder de balken in een van onze kamers op de bovenverdieping"),
+    [("room-single-overview", "Lichte eenpersoonskamer met bed, bureau en raam"),
+     ("room-single-bed", "Een comfortabel bed bij het raam"),
+     ("room-single-desk", "Bureau met thee- en koffiefaciliteiten"),
      ("view-square-panorama", "Het uitzicht over Leiden vanuit een van onze kamers aan de voorzijde")],
     "single",
     "Eenpersoonskamer | Hotel Mayflower Leiden",
@@ -478,11 +479,10 @@ kamer_page(
     "Karakteristieke tweepersoonskamers in een historisch pand: sommige met uitzicht op de levendige Beestenmarkt, sommige met balkon, allemaal met eigen badkamer.",
     ["Onze tweepersoonskamers zijn het hart van het hotel: comfortabele kamers voor twee, hier een zithoekje, daar schuine balken, en in de kamers aan de voorzijde een eersterangs uitzicht op het gezelligste plein van Leiden.",
      "Perfect voor een weekend vol musea en grachtendiners, of als vriendelijke uitvalsbasis tussen Amsterdam, Den Haag en de kust."],
-    [("room-attic-double", "Tweepersoonskamer onder de balken met zithoek bij het raam"),
-     ("room-attic-seating", "Zithoek met fauteuils en bijzettafel"),
-     ("room-large-desk", "Ruime kamer met bureau en televisie"),
-     ("room-large-beds", "Comfortabele bedden in een van onze ruimere kamers"),
-     ("view-window-seat", "Het uitzicht over de Beestenmarkt vanuit een kamer aan de voorzijde")],
+    [("room-double-overview", "Gerenoveerde tweepersoonskamer met bed, bureau en zithoek"),
+     ("room-double-window-seating", "Zithoek bij het raam met uitzicht op het plein"),
+     ("room-double-attic", "Tweepersoonskamer onder de schuine witte balken"),
+     ("room-double-twin", "Sommige tweepersoonskamers hebben twee losse bedden")],
     "double",
     "Tweepersoonskamer | Hotel Mayflower Leiden",
     "Tweepersoonskamer in hartje Leiden, sommige met uitzicht op de Beestenmarkt of balkon. Eigen badkamer, gratis wifi, televisie. Boek direct voor de beste prijs.")
@@ -494,7 +494,8 @@ kamer_page(
      "Een aantal driepersoonskamers is onlangs gerenoveerd; vraag bij het boeken gerust naar de actuele mogelijkheden."],
     [("room-triple-renovated", "Gerenoveerde driepersoonskamer met drie bedden"),
      ("room-triple-beds", "Driepersoonskamer met drie eenpersoonsbedden"),
-     ("room-large-beds", "Comfortabele bedden in een van onze ruimere kamers")],
+     ("room-triple-three-beds", "Drie comfortabele bedden en een zithoekje"),
+     ("room-bathroom-tub", "Een eigen badkamer, met verse handdoeken")],
     "triple",
     "Driepersoonskamer | Hotel Mayflower Leiden",
     "Driepersoonskamer met drie volwaardige bedden in het centrum van Leiden. Eigen badkamer, gratis wifi, televisie. Ideaal voor vrienden of gezin. Boek direct.")

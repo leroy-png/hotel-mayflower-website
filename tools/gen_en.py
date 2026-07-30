@@ -120,8 +120,9 @@ room_page(
     "A compact, quiet room for the solo traveller: a comfortable bed, a private bathroom and the whole of Leiden outside the front door.",
     ["Travelling alone for work, study or a city break? Our single rooms keep it simple: everything you need for a good night, nothing that gets in the way. Drop your bag, make a cup of tea and head out: Leiden Central Station, the museums and the old centre are all within a short walk.",
      "Some rooms look out over the rooftops of the old town; every one of them comes with the same quiet comfort."],
-    [("view-window-seat", "Window seating with a view over the Beestenmarkt"),
-     ("room-attic-window", "Seating corner under the eaves in one of our attic rooms"),
+    [("room-single-overview", "Bright single room with bed, desk and window"),
+     ("room-single-bed", "A comfortable bed by the window"),
+     ("room-single-desk", "Desk with tea and coffee facilities"),
      ("view-square-panorama", "The view over Leiden from one of our front-facing rooms")],
     "eenpersoonskamer")
 
@@ -130,11 +131,10 @@ room_page(
     "Characterful double rooms in a historic building: some with a view over the lively Beestenmarkt, some with a balcony, all with a private bathroom.",
     ["Our doubles are the heart of the hotel: comfortable rooms for two with a seating corner here, sloping beams there, and in the front rooms a grandstand view of the liveliest square in Leiden.",
      "Perfect for a weekend of museums and canal-side dinners, or as a friendly base between Amsterdam, The Hague and the coast."],
-    [("room-attic-double", "Attic double room with seating by the window"),
-     ("room-attic-seating", "Seating corner with armchairs and side table"),
-     ("room-large-desk", "Spacious room with desk and television"),
-     ("room-large-beds", "Comfortable beds in one of our larger rooms"),
-     ("view-window-seat", "The view over the Beestenmarkt from a front-facing room")],
+    [("room-double-overview", "Renovated double room with bed, desk and seating corner"),
+     ("room-double-window-seating", "Window seating with a view over the square"),
+     ("room-double-attic", "Attic double room under the sloping white beams"),
+     ("room-double-twin", "Some double rooms have two separate beds")],
     "tweepersoonskamer")
 
 room_page(
@@ -144,7 +144,8 @@ room_page(
      "Several triple rooms have been freshly renovated; ask us about the current options when you book."],
     [("room-triple-renovated", "Freshly renovated triple room with three beds"),
      ("room-triple-beds", "Triple room with three single beds"),
-     ("room-large-beds", "Comfortable beds in one of our larger rooms")],
+     ("room-triple-three-beds", "Three comfortable beds and a seating corner"),
+     ("room-bathroom-tub", "A private bathroom, with fresh towels")],
     "driepersoonskamer")
 
 
