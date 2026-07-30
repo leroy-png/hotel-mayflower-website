@@ -122,8 +122,7 @@ room_page(
      "Some rooms look out over the rooftops of the old town; every one of them comes with the same quiet comfort."],
     [("room-single-overview", "Bright single room with bed, desk and window"),
      ("room-single-bed", "A comfortable bed by the window"),
-     ("room-single-desk", "Desk with tea and coffee facilities"),
-     ("view-square-panorama", "The view over Leiden from one of our front-facing rooms")],
+     ("room-single-desk", "Desk with tea and coffee facilities and a television")],
     "eenpersoonskamer")
 
 room_page(
@@ -144,7 +143,6 @@ room_page(
      "Several triple rooms have been freshly renovated; ask us about the current options when you book."],
     [("room-triple-renovated", "Freshly renovated triple room with three beds"),
      ("room-triple-beds", "Triple room with three single beds"),
-     ("room-triple-three-beds", "Three comfortable beds and a seating corner"),
      ("room-bathroom-tub", "A private bathroom, with fresh towels")],
     "driepersoonskamer")
 

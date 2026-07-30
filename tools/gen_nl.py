@@ -468,8 +468,7 @@ kamer_page(
      "Sommige kamers kijken uit over de daken van de oude stad; stuk voor stuk bieden ze dezelfde rustige basis."],
     [("room-single-overview", "Lichte eenpersoonskamer met bed, bureau en raam"),
      ("room-single-bed", "Een comfortabel bed bij het raam"),
-     ("room-single-desk", "Bureau met thee- en koffiefaciliteiten"),
-     ("view-square-panorama", "Het uitzicht over Leiden vanuit een van onze kamers aan de voorzijde")],
+     ("room-single-desk", "Bureau met thee- en koffiefaciliteiten en televisie")],
     "single",
     "Eenpersoonskamer | Hotel Mayflower Leiden",
     "Compacte eenpersoonskamer in het centrum van Leiden met eigen badkamer, gratis wifi, televisie en thee- en koffiefaciliteiten. Boek direct.")
@@ -494,7 +493,6 @@ kamer_page(
      "Een aantal driepersoonskamers is onlangs gerenoveerd; vraag bij het boeken gerust naar de actuele mogelijkheden."],
     [("room-triple-renovated", "Gerenoveerde driepersoonskamer met drie bedden"),
      ("room-triple-beds", "Driepersoonskamer met drie eenpersoonsbedden"),
-     ("room-triple-three-beds", "Drie comfortabele bedden en een zithoekje"),
      ("room-bathroom-tub", "Een eigen badkamer, met verse handdoeken")],
     "triple",
     "Driepersoonskamer | Hotel Mayflower Leiden",
