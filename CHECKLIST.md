@@ -48,14 +48,12 @@ or intentionally left out, in priority order.
     water stain; worth a touch-up before re-shooting that room.
 12. Reception / entrance interior.
 13. Facade at dusk with the gold lettering lit.
-14. **Video hero — preview ready** at `/en/preview-hero/` (noindex, not in the
-    sitemap, linked from nowhere). Built from your own clip of the Beestenmarkt
-    on market day: 16:9 crop for desktop (2.3 MB), full vertical for phones
-    (1.7 MB), muted, looping forward-and-back so there is no visible jump, with
-    a poster still and a static fallback under "reduce motion". Say which hero
-    you want and I make it the real homepage in both languages, or delete the
-    preview. 17 further clips are unused (room pans); a short room-video
-    section is a possible next step.
+14. ~~Video hero~~ **Decided 2026-07-30:** we compared a video hero (your
+    Beestenmarkt market clip) against the facade photo and kept the **photo
+    hero** — it shows guests the building they need to find. The preview page
+    and hero video files have been removed. 18 room/market clips remain
+    unused in your local `nieuwe foto's` folder if we ever want a room-video
+    section.
 
 ## Hosting & domain (when you're ready to go live)
 
