@@ -48,8 +48,14 @@ or intentionally left out, in priority order.
     water stain; worth a touch-up before re-shooting that room.
 12. Reception / entrance interior.
 13. Facade at dusk with the gold lettering lit.
-14. Optional: Higgsfield cinemagraph from the hero photo for extra hero motion —
-    slot and poster structure are ready (`.hero-media` swaps image for video).
+14. **Video hero — preview ready** at `/en/preview-hero/` (noindex, not in the
+    sitemap, linked from nowhere). Built from your own clip of the Beestenmarkt
+    on market day: 16:9 crop for desktop (2.3 MB), full vertical for phones
+    (1.7 MB), muted, looping forward-and-back so there is no visible jump, with
+    a poster still and a static fallback under "reduce motion". Say which hero
+    you want and I make it the real homepage in both languages, or delete the
+    preview. 17 further clips are unused (room pans); a short room-video
+    section is a possible next step.
 
 ## Hosting & domain (when you're ready to go live)
 
