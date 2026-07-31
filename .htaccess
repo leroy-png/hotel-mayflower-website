@@ -13,6 +13,24 @@ RewriteRule ^ https://www.hotelmayflower.nl%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^hotelmayflower\.nl$ [NC]
 RewriteRule ^ https://www.hotelmayflower.nl%{REQUEST_URI} [R=301,L]
 
+# --- Redirects from the old WordPress site (301, keeps search rankings) ---
+# Specific rules first: mod_alias uses the first match.
+RedirectMatch 301 ^/rooms/single-room/?$ /en/rooms/single/
+RedirectMatch 301 ^/rooms/double-room/?$ /en/rooms/double/
+RedirectMatch 301 ^/rooms/triple-room/?$ /en/rooms/triple/
+RedirectMatch 301 ^/rooms/apartments/?$ /en/rooms/
+RedirectMatch 301 ^/rooms/?$ /en/rooms/
+RedirectMatch 301 ^/a[c]{1,2}o?[c]?ommodations/?$ /en/rooms/
+RedirectMatch 301 ^/location/?$ /en/leiden/
+RedirectMatch 301 ^/activities/?$ /en/leiden/
+RedirectMatch 301 ^/restaurants/?$ /en/leiden/
+RedirectMatch 301 ^/contact/?$ /en/contact/
+# Theme demo pages for facilities this hotel does not have: send to the homepage
+RedirectMatch 301 ^/(spa|news|sample-page)/?$ /en/
+RedirectMatch 301 ^/portfolio_category/rooms/?$ /en/rooms/
+RedirectMatch 301 ^/portfolio_category/.*$ /en/
+RedirectMatch 301 ^/portfolio-items/.*$ /en/
+
 # Never serve version-control or deploy files
 RedirectMatch 404 (?i)/\.(git|cpanel)
 Options -Indexes
