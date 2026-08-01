@@ -750,7 +750,7 @@ contact_body = f"""<main id="main">
           <p style="position:absolute;left:-9999px" aria-hidden="true"><label>Laat dit veld leeg<input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
           <p class="form-status" role="status"></p>
           <button class="btn btn-gold" type="submit">Verstuur bericht</button>
-          <p class="hint">Wij reageren binnen één werkdag. Voor beschikbaarheid en prijzen is onze <a href="{BOOK}" rel="noopener">boekingspagina</a> altijd actueel.</p>
+          <p class="hint">Wij reageren binnen 24 uur. Voor beschikbaarheid en prijzen is onze <a href="{BOOK}" rel="noopener">boekingspagina</a> altijd actueel.</p>
         </form>
       </div>
       <div class="reveal reveal-d1">

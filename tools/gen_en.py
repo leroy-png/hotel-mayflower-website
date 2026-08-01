@@ -398,7 +398,7 @@ contact_body = f"""<main id="main">
           <p style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
           <p class="form-status" role="status"></p>
           <button class="btn btn-gold" type="submit">Send message</button>
-          <p class="hint">We reply within one working day. For availability and prices, our <a href="{BOOK}" rel="noopener">booking page</a> is always up to date.</p>
+          <p class="hint">We reply within 24 hours. For availability and prices, our <a href="{BOOK}" rel="noopener">booking page</a> is always up to date.</p>
         </form>
       </div>
       <div class="reveal reveal-d1">
