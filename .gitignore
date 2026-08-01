@@ -7,3 +7,4 @@ nieuwe foto's/
 # server-side config + stored messages (never in git)
 .data/
 mayflower-mail-config.php
+mail-config.php
