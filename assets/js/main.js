@@ -260,13 +260,13 @@
     var status = form.querySelector(".form-status");
     var t = {
       en: {
-        ok: "Thank you — your message has been sent. We reply within one working day.",
+        ok: "Thank you — your message has been sent. We reply within 24 hours.",
         err: "Something went wrong while sending. Please email us directly at info@hotelmayflower.nl.",
         sending: "Sending…",
         mail: "Your email app will open with the message ready to send."
       },
       nl: {
-        ok: "Dank u wel — uw bericht is verzonden. Wij reageren binnen één werkdag.",
+        ok: "Dank u wel — uw bericht is verzonden. Wij reageren binnen 24 uur.",
         err: "Er ging iets mis bij het verzenden. Mail ons gerust rechtstreeks via info@hotelmayflower.nl.",
         sending: "Bezig met verzenden…",
         mail: "Uw e-mailprogramma opent met het bericht klaar om te verzenden."
