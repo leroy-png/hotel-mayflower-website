@@ -29,6 +29,38 @@ function respond(int $code, bool $ok, string $note = '', array $extra = []): voi
     exit;
 }
 
+/** Where the config may live. PHP is often restricted (open_basedir) to the
+ *  document root, so a location inside it is offered as a fallback. */
+function config_candidates(): array {
+    $doc = rtrim((string)($_SERVER['DOCUMENT_ROOT'] ?? ''), '/');
+    return array_filter([
+        home_dir() . '/mayflower-mail-config.php',
+        $doc !== '' ? dirname($doc) . '/mayflower-mail-config.php' : '',
+        $doc !== '' ? $doc . '/.data/mail-config.php' : '',
+    ]);
+}
+
+/** First writable storage directory, preferring one outside the web root. */
+function storage_dir(): string {
+    $doc = rtrim((string)($_SERVER['DOCUMENT_ROOT'] ?? ''), '/');
+    $candidates = array_filter([
+        home_dir() . '/contact-messages',
+        $doc !== '' ? $doc . '/.data/contact-messages' : '',
+        sys_get_temp_dir() . '/mayflower-contact',
+    ]);
+    foreach ($candidates as $dir) {
+        if (@is_dir($dir) ? @is_writable($dir) : @mkdir($dir, 0700, true)) {
+            // Belt and braces: if it ended up under the web root, deny access.
+            $guard = dirname($dir) . '/.htaccess';
+            if ($doc !== '' && strpos($dir, $doc) === 0 && !file_exists($guard)) {
+                @file_put_contents($guard, "Require all denied\nDeny from all\n");
+            }
+            return $dir;
+        }
+    }
+    return '';
+}
+
 function home_dir(): string {
     $h = getenv('HOME');
     if ($h && is_dir($h)) return rtrim($h, '/');
@@ -53,19 +85,19 @@ function load_config(): array {
         'smtp_pass'     => '',
         'selftest_token' => '',
     ];
-    foreach ([home_dir() . '/mayflower-mail-config.php'] as $path) {
-        if (is_readable($path)) {
-            $cfg = include $path;
-            if (is_array($cfg)) return array_merge($defaults, $cfg);
+    foreach (config_candidates() as $path) {
+        if (@is_readable($path)) {
+            $cfg = @include $path;
+            if (is_array($cfg)) return array_merge($defaults, $cfg, ['_config_path_found' => true]);
         }
     }
-    return $defaults;
+    return $defaults + ['_config_path_found' => false];
 }
 
 /** Append one record to ~/contact-messages/YYYY-MM.jsonl. Returns the file path or ''. */
 function store_message(array $record): string {
-    $dir = home_dir() . '/contact-messages';
-    if (!is_dir($dir) && !@mkdir($dir, 0700, true) && !is_dir($dir)) return '';
+    $dir = storage_dir();
+    if ($dir === '') return '';
     $file = $dir . '/' . gmdate('Y-m') . '.jsonl';
     $line = json_encode($record, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n";
     return @file_put_contents($file, $line, FILE_APPEND | LOCK_EX) === false ? '' : $file;
@@ -73,7 +105,9 @@ function store_message(array $record): string {
 
 /** Crude per-IP rate limit based on the stored log. */
 function rate_limited(string $ip): bool {
-    $file = home_dir() . '/contact-messages/' . gmdate('Y-m') . '.jsonl';
+    $dir = storage_dir();
+    if ($dir === '') return false;
+    $file = $dir . '/' . gmdate('Y-m') . '.jsonl';
     if (!is_readable($file)) return false;
     $cut = time() - 3600;
     $hits = 0;
@@ -192,7 +226,13 @@ function smtp_send(array $cfg, string $to, string $subject, string $body, string
 $cfg = load_config();
 
 if (isset($_GET['ping'])) {
-    respond(200, true, 'alive', ['smtp' => $cfg['smtp_host'] !== '' ? 'configured' : 'not configured']);
+    $store = storage_dir();
+    respond(200, true, 'alive', [
+        'smtp'    => $cfg['smtp_host'] !== '' ? 'configured' : 'not configured',
+        'config'  => !empty($cfg['_config_path_found']) ? 'found' : 'not found',
+        'storage' => $store !== '' ? 'writable' : 'NOT writable',
+        'looked_in' => array_map(fn($p) => str_replace(home_dir(), '~', $p), config_candidates()),
+    ]);
 }
 
 if (isset($_GET['selftest'])) {
