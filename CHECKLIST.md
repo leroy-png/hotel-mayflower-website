@@ -27,11 +27,16 @@ or intentionally left out, in priority order.
    genuine quotes (Google/Booking.com, with reviewer consent) per language.
 7. **Social media URLs** — the footer currently has no social links; send the
    Facebook/Instagram URLs and they go in.
-8. ~~Contact-form endpoint~~ **Resolved 2026-07-27:** the site now ships its
-   own `contact.php` on the cPanel server; submissions are emailed to
-   info@hotelmayflower.nl (honeypot spam filter included). Note: the form on
-   the GitHub Pages preview URL shows the error message by design — PHP only
-   runs on the real server.
+8. **Contact form — needs two settings on the server (2026-08-01).**
+   Messages were not arriving because (a) cPanel treats hotelmayflower.nl as a
+   *local* mail domain, so mail to info@ never reaches Office 365, and (b) the
+   SPF record ends in `-all` and does not list the web server, so Microsoft
+   rejects mail sent from it. Fix: cPanel → Email Routing → set
+   hotelmayflower.nl to **Remote Mail Exchanger**, and create
+   `/home/themayflower/mayflower-mail-config.php` from `mail-config.sample.php`
+   with the SMTP2GO credentials. Every submission is now also stored in
+   `/home/themayflower/contact-messages/YYYY-MM.jsonl`, so nothing is lost even
+   if mail fails. Test with `/contact.php?selftest=<token>`.
 9. **Terrace** — photos excluded on your instruction (not presentable yet). When
    ready: shoot 2–3 photos, confirm whether smoking is allowed there, and it gets
    a section on Home + Hotel information.

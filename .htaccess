@@ -34,8 +34,9 @@ RedirectMatch 301 ^/portfolio_category/rooms/?$ /en/rooms/
 RedirectMatch 301 ^/portfolio_category/.*$ /en/
 RedirectMatch 301 ^/portfolio-items/.*$ /en/
 
-# Never serve version-control or deploy files
+# Never serve version-control, deploy or config files
 RedirectMatch 404 (?i)/\.(git|cpanel)
+RedirectMatch 404 (?i)mail-config.*\.php$
 Options -Indexes
 ErrorDocument 404 /404.html
 AddDefaultCharset utf-8

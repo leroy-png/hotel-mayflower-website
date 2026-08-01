@@ -14,7 +14,7 @@ import shutil
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "_site")
 COPY = ["en", "nl", "assets", "index.html", "404.html", "robots.txt", "sitemap.xml",
-        ".cpanel.yml", ".htaccess", "contact.php"]  # cPanel reads this from the deploy branch; rsync excludes it from the webspace
+        ".cpanel.yml", ".htaccess", "contact.php", "mail-config.sample.php"]  # cPanel reads this from the deploy branch; rsync excludes it from the webspace
 
 
 def rewrite_html(path, base, version):
