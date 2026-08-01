@@ -36,6 +36,9 @@ function config_candidates(): array {
     return array_filter([
         home_dir() . '/mayflower-mail-config.php',
         $doc !== '' ? dirname($doc) . '/mayflower-mail-config.php' : '',
+        // Next to contact.php: easiest to create, and .htaccess already
+        // returns 404 for any mail-config*.php so it is never served.
+        $doc !== '' ? $doc . '/mail-config.php' : '',
         $doc !== '' ? $doc . '/.data/mail-config.php' : '',
     ]);
 }
