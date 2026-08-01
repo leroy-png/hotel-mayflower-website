@@ -244,14 +244,31 @@
       en: {
         ok: "Thank you — your message has been sent. We reply within one working day.",
         err: "Something went wrong while sending. Please email us directly at info@hotelmayflower.nl.",
+        sending: "Sending…",
         mail: "Your email app will open with the message ready to send."
       },
       nl: {
         ok: "Dank u wel — uw bericht is verzonden. Wij reageren binnen één werkdag.",
         err: "Er ging iets mis bij het verzenden. Mail ons gerust rechtstreeks via info@hotelmayflower.nl.",
+        sending: "Bezig met verzenden…",
         mail: "Uw e-mailprogramma opent met het bericht klaar om te verzenden."
       }
     }[LANG];
+
+    var btn = form.querySelector('button[type="submit"]');
+    var btnLabel = btn ? btn.textContent : "";
+
+    function show(kind, text) {
+      status.className = "form-status " + kind;
+      status.textContent = text;
+      // Make sure the visitor actually sees the answer.
+      if (status.scrollIntoView) status.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    function busy(on) {
+      if (!btn) return;
+      btn.disabled = on;
+      btn.textContent = on ? t.sending : btnLabel;
+    }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -260,15 +277,16 @@
       if (data.get("website")) return;
 
       if (FORM_ENDPOINT) {
+        busy(true);
         fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } })
           .then(function (r) {
-            status.className = "form-status " + (r.ok ? "ok" : "err");
-            status.textContent = r.ok ? t.ok : t.err;
+            busy(false);
+            show(r.ok ? "ok" : "err", r.ok ? t.ok : t.err);
             if (r.ok) form.reset();
           })
           .catch(function () {
-            status.className = "form-status err";
-            status.textContent = t.err;
+            busy(false);
+            show("err", t.err);
           });
       } else {
         var subject = (LANG === "nl" ? "Vraag via hotelmayflower.nl — " : "Enquiry via hotelmayflower.nl — ") + (data.get("name") || "");
@@ -278,8 +296,7 @@
         });
         window.location.href = "mailto:info@hotelmayflower.nl?subject=" +
           encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
-        status.className = "form-status ok";
-        status.textContent = t.mail;
+        show("ok", t.mail);
       }
     });
   }

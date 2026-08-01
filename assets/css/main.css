@@ -485,9 +485,20 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 .form textarea { min-height: 9rem; resize: vertical; }
 .form input:focus, .form textarea:focus, .form select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .form .hint { font-size: .82rem; color: var(--faint); margin-top: .35rem; }
-.form-status { border-radius: var(--r-sm); padding: .9rem 1.1rem; font-size: .95rem; display: none; }
-.form-status.ok { display: block; background: color-mix(in srgb, var(--accent) 14%, var(--surface)); color: var(--fg-strong); border: 1px solid var(--glass-line); }
-.form-status.err { display: block; background: color-mix(in srgb, #b3452f 16%, var(--surface)); color: var(--fg-strong); border: 1px solid rgba(179,69,47,.4); }
+.form-status { border-radius: var(--r-sm); padding: 1rem 1.15rem; font-size: .98rem; display: none;
+  line-height: 1.5; font-weight: 500; }
+.form-status.ok, .form-status.err { display: flex; gap: .7rem; align-items: flex-start;
+  animation: status-in .45s var(--ease) both; }
+.form-status.ok::before, .form-status.err::before { flex: none; font-size: 1.1em; line-height: 1.4; }
+.form-status.ok { background: color-mix(in srgb, var(--accent) 18%, var(--surface)); color: var(--fg-strong);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+.form-status.ok::before { content: "✓"; color: var(--accent-text); font-weight: 700; }
+.form-status.err { background: color-mix(in srgb, #b3452f 16%, var(--surface)); color: var(--fg-strong);
+  border: 1px solid rgba(179,69,47,.45); }
+.form-status.err::before { content: "!"; color: #b3452f; font-weight: 700; }
+@keyframes status-in { from { opacity: 0; transform: translateY(-6px); } }
+.form button[disabled] { opacity: .65; cursor: progress; }
+@media (prefers-reduced-motion: reduce) { .form-status.ok, .form-status.err { animation: none; } }
 
 /* ---------- Map (consent-gated) ---------- */
 .map-embed { position: relative; border-radius: var(--r-lg); overflow: clip; aspect-ratio: 16 / 10; border: 1px solid var(--line-soft); background: var(--surface); box-shadow: var(--shadow); }
