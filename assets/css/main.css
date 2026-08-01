@@ -543,6 +543,15 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 .cookie-banner p { font-size: .88rem; color: var(--muted); margin: 0 0 1rem; }
 .cookie-banner .row { display: flex; gap: .6rem; flex-wrap: wrap; }
 .cookie-banner .btn { padding: .65rem 1.2rem; min-height: 2.4rem; font-size: .78rem; }
+/* The banner is fixed, so it would sit on top of whatever is at the bottom of
+   the page — including the contact form's send button, making it unclickable.
+   Reserve the space it occupies until the visitor dismisses it. */
+body.has-cookie-banner { padding-bottom: calc(var(--cookie-h, 12rem) + 1.5rem); }
+/* On short screens keep it compact and scrollable rather than half the viewport */
+@media (max-height: 620px) {
+  .cookie-banner { max-height: 60vh; overflow: auto; padding: 1rem 1.1rem; }
+  .cookie-banner p { margin-bottom: .7rem; }
+}
 
 /* ---------- Scroll reveals ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease), transform .8s var(--ease); }

@@ -222,7 +222,24 @@
     if (!banner) return;
     var seen = null;
     try { seen = localStorage.getItem("hm-cookie-seen"); } catch (e) {}
-    if (!seen) banner.classList.add("is-visible");
+    /* Reserve room for the fixed banner, otherwise it covers whatever sits at
+       the bottom of the page (the send button, for instance) and swallows clicks. */
+    function reserveSpace() {
+      document.body.classList.add("has-cookie-banner");
+      document.body.style.setProperty("--cookie-h", banner.offsetHeight + "px");
+    }
+    function releaseSpace() {
+      document.body.classList.remove("has-cookie-banner");
+      document.body.style.removeProperty("--cookie-h");
+    }
+
+    if (!seen) {
+      banner.classList.add("is-visible");
+      reserveSpace();
+      window.addEventListener("resize", function () {
+        if (banner.classList.contains("is-visible")) reserveSpace();
+      });
+    }
     banner.querySelectorAll("button").forEach(function (b) {
       b.addEventListener("click", function () {
         try { localStorage.setItem("hm-cookie-seen", "yes"); } catch (e) {}
@@ -231,6 +248,7 @@
           document.querySelectorAll(".map-embed").forEach(loadMap);
         }
         banner.classList.remove("is-visible");
+        releaseSpace();
       });
     });
   }
