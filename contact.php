@@ -234,7 +234,13 @@ if (isset($_GET['ping'])) {
         'smtp'    => $cfg['smtp_host'] !== '' ? 'configured' : 'not configured',
         'config'  => !empty($cfg['_config_path_found']) ? 'found' : 'not found',
         'storage' => $store !== '' ? 'writable' : 'NOT writable',
-        'looked_in' => array_map(fn($p) => str_replace(home_dir(), '~', $p), config_candidates()),
+        'paths' => array_map(fn($p) => [
+            'p'        => str_replace(home_dir(), '~', $p),
+            'exists'   => @file_exists($p),
+            'readable' => @is_readable($p),
+        ], config_candidates()),
+        'php_user' => function_exists('posix_geteuid') && function_exists('posix_getpwuid')
+            ? (string)(@posix_getpwuid(posix_geteuid())['name'] ?? '?') : '?',
     ]);
 }
 
