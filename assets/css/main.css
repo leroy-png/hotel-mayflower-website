@@ -553,6 +553,24 @@ body.has-cookie-banner { padding-bottom: calc(var(--cookie-h, 12rem) + 1.5rem); 
   .cookie-banner p { margin-bottom: .7rem; }
 }
 
+/* ---------- Guest guide ---------- */
+.guide-grid { display: grid; gap: 1rem; margin-top: 2.2rem; }
+@media (min-width: 700px) { .guide-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1020px) { .guide-grid { grid-template-columns: repeat(3, 1fr); } }
+.guide-item {
+  background: var(--surface); border: 1px solid var(--line-soft); border-radius: var(--r);
+  padding: 1.5rem 1.4rem; display: grid; gap: .45rem; align-content: start;
+}
+.guide-item h3 { font-size: 1.3rem; margin: 0; }
+.guide-item p { margin: 0; font-size: .95rem; color: var(--muted); }
+.guide-walk {
+  justify-self: start; font: 600 .72rem/1 var(--sans); letter-spacing: .14em;
+  text-transform: uppercase; color: var(--accent-text);
+  border: 1px solid var(--line); border-radius: 999px; padding: .35rem .7rem;
+}
+.guide-links { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-top: .35rem; }
+.guide-links a { font: 600 .85rem/1.4 var(--sans); text-decoration: none; }
+
 /* ---------- Scroll reveals ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
 .reveal.is-visible { opacity: 1; transform: none; }

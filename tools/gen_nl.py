@@ -542,7 +542,7 @@ leiden_body = f"""<main id="main">
         <p class="sub-italic">Klein genoeg om te lopen, rijk genoeg voor een week.</p>
         <p>Leiden draagt zijn geschiedenis licht: dertien musea, de oudste universiteit van het land, molens boven de grachten en hofjes die schuilgaan achter gewone voordeuren. Huur een sloep, loop mee met een stadswandeling of volg het Singelpark, zes groene kilometers rond de binnenstad.</p>
         <p>Op woensdag en zaterdag strijkt de markt neer langs de Nieuwe Rijn, op vijf minuten van uw kamer. En als de musea sluiten, wordt de Beestenmarkt zelf de bestemming: terrassen, restaurants en avondlicht op het water.</p>
-        <p style="font-size:.9rem;color:var(--faint)">Tip: kijk op <a href="https://www.visitleiden.nl" rel="noopener">visitleiden.nl</a> voor tentoonstellingen en evenementen tijdens uw verblijf. De genoemde attracties zijn aanbevelingen voor uw bezoek; openingstijden en programma's worden door de locaties zelf bepaald.</p>
+        <p style="font-size:.9rem;color:var(--faint)">Logeert u bij ons? Onze <a href="/nl/gids/">gastengids</a> bundelt restaurants, wandelroutes en dagtrips, allemaal vanaf onze voordeur. Tip: kijk op <a href="https://www.visitleiden.nl" rel="noopener">visitleiden.nl</a> voor tentoonstellingen en evenementen tijdens uw verblijf. De genoemde attracties zijn aanbevelingen voor uw bezoek; openingstijden en programma's worden door de locaties zelf bepaald.</p>
       </div>
       <div class="split-media portrait reveal reveal-d1">
         {picture("view-beestenmarkt", "Uitzicht over de Beestenmarkt en de rondvaartboten", sizes="(min-width: 900px) 44vw, 92vw", widths=(480, 960, 1600))}
