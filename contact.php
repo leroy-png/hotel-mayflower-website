@@ -262,7 +262,19 @@ if (isset($_GET['selftest'])) {
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') respond(405, false, 'method');
 
 // Honeypot: bots fill every field. Pretend success so they stop retrying.
-if (!empty($_POST['website'])) respond(200, true);
+// Store the submission anyway (flagged): the page JS clears this field for
+// real visitors, but a no-JS visitor with browser autofill could land here,
+// and a genuine message must never be lost.
+if (!empty($_POST['website'])) {
+    store_message([
+        'at' => gmdate('c'), 'suspected_spam' => true,
+        'name' => mb_substr((string)($_POST['name'] ?? ''), 0, MAX_NAME),
+        'email' => mb_substr((string)($_POST['email'] ?? ''), 0, MAX_NAME),
+        'message' => mb_substr((string)($_POST['message'] ?? ''), 0, MAX_MESSAGE),
+        'ip' => (string)($_SERVER['REMOTE_ADDR'] ?? ''),
+    ]);
+    respond(200, true);
+}
 
 $name    = trim((string)($_POST['name'] ?? ''));
 $email   = trim((string)($_POST['email'] ?? ''));
