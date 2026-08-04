@@ -291,8 +291,12 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var data = new FormData(form);
-      // Honeypot: real visitors never fill this field
-      if (data.get("website")) return;
+      // Honeypot: browser autofill sometimes fills this invisible field for
+      // real visitors, so clear it here. Spam bots that POST without running
+      // this script still get caught by the server-side check.
+      data.delete("website");
+      var hp = form.querySelector('[name="website"]');
+      if (hp) hp.value = "";
 
       if (FORM_ENDPOINT) {
         busy(true);
