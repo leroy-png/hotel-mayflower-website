@@ -46,7 +46,7 @@ hotel_ld = f"""<script type="application/ld+json">
     "addressLocality": "Leiden",
     "addressCountry": "NL"
   }},
-  "geo": {{ "@type": "GeoCoordinates", "latitude": 52.1607, "longitude": 4.4854 }},
+  "geo": {{ "@type": "GeoCoordinates", "latitude": 52.1628825, "longitude": 4.4848159 }},
   "telephone": "+31715142641",
   "email": "info@hotelmayflower.nl",
   "checkinTime": "15:00",
@@ -251,11 +251,30 @@ home_body = f"""<main id="main">
     </div>
   </section>
 
-  <!--
-    GASTBEOORDELINGEN: sectie voorbereid maar uitgeschakeld.
-    Voeg drie echte gastbeoordelingen toe (bijv. van Google of Booking.com, met toestemming)
-    en verwijder dit commentaarblok. Zie CHECKLIST.md.
-  -->
+  <section class="section">
+    <div class="container">
+      <div class="center reveal">
+        <p class="eyebrow">Gasten over ons</p>
+        <h2>Woorden van het plein</h2>
+        <p class="lede">Google beoordeelt onze plek aan de Beestenmarkt met 4,7 van 5 voor bezoekers: "buitengewoon aantrekkelijk". Dit zeggen onze gasten.</p>
+      </div>
+      <div class="grid grid-3" style="margin-top:3rem">
+        <div class="tile reveal">
+          <blockquote style="margin:0">"Toplocatie met zeer vriendelijke medewerkers. De kamers waren schoon, de bedden sliepen fantastisch en de kamers waren bovendien ruim en comfortabel. Goede prijs-kwaliteitverhouding."</blockquote>
+          <cite style="color:var(--faint);font-style:normal">Joran · ★★★★★ via Google</cite>
+        </div>
+        <div class="tile reveal reveal-d1">
+          <blockquote style="margin:0">"Goed ontvangen, zeer mooie kamer, vriendelijke schoonmaakster. Zeer aan te raden."</blockquote>
+          <cite style="color:var(--faint);font-style:normal">Piet · ★★★★★ via Google</cite>
+        </div>
+        <div class="tile reveal reveal-d2">
+          <h3 style="font-size:1.25rem">Een nieuw hoofdstuk</h3>
+          <p style="color:var(--muted);font-size:.95rem;margin:0">Sinds mei 2026 heeft Hotel Mayflower nieuwe eigenaren. Nieuwe bedden en kussens, vernieuwd meubilair, smart-tv's op elke kamer, en er komen elke maand verbeteringen bij.</p>
+          <a href="https://www.google.com/maps?cid=67496388067959428" rel="noopener" target="_blank" style="font-size:.95rem">Lees alle reviews op Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container">

@@ -15,19 +15,24 @@ or intentionally left out, in priority order.
    locker is by the entrance or across from reception).
 3. **"22 rooms"** is mentioned on the rooms pages — taken from your staff app.
    Confirm the number.
-4. **Geo-coordinates** in structured data are `52.1607, 4.4854` (approximate).
-   Verify the pin in Google Maps and correct if needed.
+4. ~~Geo-coordinates~~ **Fixed 2026-08-04** with the exact Google pin
+   (52.1628825, 4.4848159).
 5. **Breakfast timeline.** Copy says "temporarily unavailable due to renovation
    works". When breakfast returns (or is discontinued permanently), the texts on
    Home, Hotel information and FAQ need one-line updates — in both languages.
 
 ## Missing content (site has prepared slots)
 
-6. **Guest reviews** — homepage section is built but commented out. Provide three
-   genuine quotes (Google/Booking.com, with reviewer consent) per language.
-7. **Social media URLs** — the footer currently has no social links; send the
-   Facebook/Instagram URLs and they go in.
-8. **Contact form — needs two settings on the server (2026-08-01).**
+6. ~~Guest reviews~~ **Live 2026-08-04.** Built honestly around what is
+   verifiable: Google's 4.7/5 location score, two genuine 5-star Google quotes
+   (Joran, Piet; punctuation normalised, wording untouched; EN shows marked
+   translations), and a "new chapter since May 2026" card linking to all
+   reviews on Google. No overall-score claim: the profile shows 3.6, weighed
+   down by pre-2026 reviews of the previous owners.
+7. ~~Social media~~ **Instagram in the footer since 2026-08-04**
+   (instagram.com/hotel_mayflower). Send other profiles if they exist.
+8. ~~Contact form~~ **Working since 2026-08-01, confirmed by Leroy 2026-08-04.**
+   Historical notes:
    Messages were not arriving because (a) cPanel treats hotelmayflower.nl as a
    *local* mail domain, so mail to info@ never reaches Office 365, and (b) the
    SPF record ends in `-all` and does not list the web server, so Microsoft
@@ -83,6 +88,18 @@ or intentionally left out, in priority order.
     direct-book.com (dated furnishing, mountain artwork) does not appear to be
     this hotel. Review and replace the property photos inside SiteMinder — the
     new website sends guests there, so the mismatch will be noticed.
+
+
+## Google Business Profile (found while fetching reviews, 2026-08-04)
+
+19. **Wrong amenities on Google.** The profile lists Zwembad, Ontbijt,
+    Parkeren, Airconditioning and Rolstoeltoegankelijk — none of which the
+    hotel offers. This is the never-claim list, live on Google. Fix in the
+    Business Profile (Bewerken → Voorzieningen).
+20. **Check-in time on Google says 11:30**; the real window is 15:00-18:00.
+21. **Owner-account review.** There is an unpublished review of the hotel
+    from your own Google account; Google does not allow owner reviews, so
+    it is best deleted.
 
 ## Verified during build (no action needed)
 

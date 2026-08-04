@@ -511,7 +511,7 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 .map-consent .pin { width: 2.2rem; height: 2.2rem; color: var(--accent); margin: 0 auto; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--bg-2); border-top: 1px solid var(--line-soft); padding: clamp(3.5rem, 7vw, 5.5rem) 0 2.5rem; margin-top: clamp(3rem, 7vw, 5rem); }
+.site-footer { background: var(--bg-2); border-top: 1px solid var(--line-soft); padding: clamp(3.5rem, 7vw, 5.5rem) 0 2.5rem; }
 .footer-grid { display: grid; gap: 2.4rem; }
 @media (min-width: 860px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; } }
 .site-footer h4 { font: 600 .78rem/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1.1rem; }
@@ -523,6 +523,8 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 .footer-brand .brand-lockup .wordmark { height: 2.1rem; }
 .footer-brand .logo-light { height: 3.2rem; margin-bottom: 1rem; }
 .footer-brand p { color: var(--muted); font-size: .95rem; max-width: 30ch; }
+.footer-social a { display: inline-flex; align-items: center; gap: .55rem; }
+.footer-social svg { width: 1.05rem; height: 1.05rem; flex: none; }
 .footer-bottom {
   margin-top: 3rem; padding-top: 1.6rem; border-top: 1px solid var(--line-soft);
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: space-between; align-items: center;
@@ -546,7 +548,7 @@ body.has-hero .site-header:not(.is-scrolled) .lang-switch a[aria-current="true"]
 /* The banner is fixed, so it would sit on top of whatever is at the bottom of
    the page — including the contact form's send button, making it unclickable.
    Reserve the space it occupies until the visitor dismisses it. */
-body.has-cookie-banner { padding-bottom: calc(var(--cookie-h, 12rem) + 1.5rem); }
+body.has-cookie-banner .site-footer { padding-bottom: calc(var(--cookie-h, 12rem) + 1.5rem); }
 /* On short screens keep it compact and scrollable rather than half the viewport */
 @media (max-height: 620px) {
   .cookie-banner { max-height: 60vh; overflow: auto; padding: 1rem 1.1rem; }
