@@ -4,7 +4,7 @@
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BOOK = "https://direct-book.com/properties/HotelMayflowerDirect"
+BOOK = "https://mayflower.book.noovy.com/"
 DOMAIN = "https://www.hotelmayflower.nl"
 
 NAV = {

@@ -81,13 +81,17 @@ or intentionally left out, in priority order.
     once the hotelmayflower.nl domain is transferred to the server.
 16. Submit `sitemap.xml` in Google Search Console; claim/refresh the Google
     Business Profile so Maps shows the new site.
-17. After launch, verify the booking deep-link opens with dates prefilled from
-    the live domain (it did from the test environment: dates, language AND
-    guest count all carry through).
-18. **Booking-engine photos look wrong.** The room photo shown on
-    direct-book.com (dated furnishing, mountain artwork) does not appear to be
-    this hotel. Review and replace the property photos inside SiteMinder — the
-    new website sends guests there, so the mismatch will be noticed.
+17. ~~SiteMinder deep-link check~~ **Superseded 2026-08-27:** the booking
+    engine switched to Noovy (mayflower.book.noovy.com). All booking links
+    and the booking bar now open Noovy in the visitor's language
+    (?lng=nl-NL / en-GB — verified working). **Noovy accepts no date or
+    guest URL parameters** (confirmed in its router code: only
+    `bookingStep` exists), so the booking bar no longer prefills dates.
+    Worth asking Noovy support whether a date deep-link parameter exists
+    or is planned; if they add one, wiring it in is a two-line change.
+18. ~~SiteMinder property photos~~ **Superseded by the Noovy switch** — the
+    site no longer links to direct-book.com. Check instead that the room
+    photos inside the Noovy engine are your real, current photos.
 
 
 ## Google Business Profile (found while fetching reviews, 2026-08-04)
