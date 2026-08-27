@@ -107,10 +107,9 @@ or intentionally left out, in priority order.
 
 ## Verified during build (no action needed)
 
-- Booking engine is SiteMinder "The Booking Button"; deep links use
-  `checkInDate` / `checkOutDate` / `locale` / `currency` (confirmed in the
-  engine's own code). Guest count cannot be passed via URL — visitors pick
-  occupancy on the engine page.
+- Booking engine is Noovy (since 2026-08-27): mayflower.book.noovy.com,
+  language via `?lng=nl-NL` / `en-GB`; no date or guest URL parameters
+  (see item 17). Previously SiteMinder direct-book.com.
 - No false amenity claims: the old site's "Delicious Breakfast", "Room Service"
   and "Bike Rentals" claims are gone; audit script: `tools/audit.sh`.
 - Wi-Fi network name/password are deliberately **not** published on the site.
