@@ -11,7 +11,9 @@
   // Contact form: paste a form endpoint here (e.g. Formspree/Basin URL) to switch
   // from the mailto fallback to a real POST. See CONTENT-GUIDE.md.
   var FORM_ENDPOINT = "/contact.php";
-  var BOOKING_URL = "https://direct-book.com/properties/HotelMayflowerDirect";
+  var BOOKING_URL = "https://mayflower.book.noovy.com/";
+  // Noovy reads ?lng=<locale>; it accepts no date/guest URL parameters
+  var BOOKING_LNG = LANG === "nl" ? "nl-NL" : "en-GB";
 
   /* ---------- Theme toggle (initial theme is set inline in <head>) ---------- */
   function initTheme() {
@@ -78,7 +80,7 @@
     });
   }
 
-  /* ---------- Booking bar → SiteMinder deep link ---------- */
+  /* ---------- Booking bar → Noovy booking engine ---------- */
   function initBooking() {
     var form = document.getElementById("booking-form");
     if (!form) return;
@@ -113,21 +115,19 @@
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var url = BOOKING_URL + "?locale=" + LANG + "&currency=EUR";
-      if (ci.value) url += "&checkInDate=" + encodeURIComponent(ci.value);
-      if (co.value) url += "&checkOutDate=" + encodeURIComponent(co.value);
-      if (guests && guests.value) url += "&adults=" + encodeURIComponent(guests.value);
-      window.open(url, "_blank", "noopener");
+      // The Noovy engine cannot receive dates via the URL (verified in its
+      // router code); it opens in the right language and the guest picks
+      // dates there.
+      window.open(BOOKING_URL + "?lng=" + BOOKING_LNG, "_blank", "noopener");
     });
   }
 
-  /* Plain "book now" links: append locale so the engine opens in the right language */
+  /* Plain "book now" links: append lng so the engine opens in the right language */
   function initBookLinks() {
-    document.querySelectorAll('a[href^="' + BOOKING_URL + '"]').forEach(function (a) {
+    document.querySelectorAll('a[href^="' + BOOKING_URL.replace(/\/$/, "") + '"]').forEach(function (a) {
       try {
         var u = new URL(a.href);
-        if (!u.searchParams.has("locale")) u.searchParams.set("locale", LANG);
-        if (!u.searchParams.has("currency")) u.searchParams.set("currency", "EUR");
+        if (!u.searchParams.has("lng")) u.searchParams.set("lng", BOOKING_LNG);
         a.href = u.toString();
       } catch (e) {}
     });
