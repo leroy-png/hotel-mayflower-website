@@ -18,7 +18,7 @@
 <link rel="icon" href="/assets/logo/favicon-32.png" type="image/png">
 <link rel="icon" href="/assets/logo/beeldmerk_gold.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/main.css?v=bd733c19">
+<link rel="stylesheet" href="/assets/css/main.css?v=29fc43bc">
 <script>(function(){try{var t=localStorage.getItem("hm-theme");if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);if(localStorage.getItem("hm-notice-fraud2026"))document.documentElement.setAttribute("data-notice-dismissed","");}catch(e){}})();</script>
 <script type="application/ld+json">
 {
@@ -80,10 +80,16 @@
   </ul>
 </nav>
 
-<div class="notice-bar" id="fraud-notice" role="region" aria-label="Lees meer">
-  <div class="container notice-bar-inner">
-    <p>&#9888;&#65039; Let op: er zijn valse WhatsApp- en sms-berichten over hotelboekingen in omloop. Wij vragen u nooit via een berichtlink om te betalen. <a href="/nl/fraudewaarschuwing/">Lees meer &rarr;</a></p>
-    <button type="button" class="notice-bar-close" aria-label="Waarschuwing sluiten">&times;</button>
+<div class="notice-modal" id="fraud-notice" role="dialog" aria-modal="true" aria-labelledby="fraud-notice-title" hidden>
+  <div class="notice-modal-backdrop" data-notice-dismiss></div>
+  <div class="notice-modal-card">
+    <p class="eyebrow">&#9888;&#65039; Hotel Mayflower</p>
+    <h2 id="fraud-notice-title">Let op: valse berichten over boekingen</h2>
+    <p>Er zijn valse WhatsApp- en sms-berichten over hotelboekingen in omloop. Wij vragen u nooit via een berichtlink om te betalen of kaartgegevens te bevestigen. Twijfelt u? Bel ons: +31 71 514 2641.</p>
+    <div class="notice-modal-row">
+      <a class="btn btn-gold" href="/nl/fraudewaarschuwing/">Lees meer</a>
+      <button type="button" class="btn btn-ghost" data-notice-dismiss>Begrepen</button>
+    </div>
   </div>
 </div>
 <main id="main">
@@ -181,6 +187,6 @@
   </div>
 </div>
 
-<script src="/assets/js/main.js?v=bd733c19" defer></script>
+<script src="/assets/js/main.js?v=29fc43bc" defer></script>
 </body>
 </html>
