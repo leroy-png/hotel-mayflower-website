@@ -26,7 +26,9 @@ STR = {
                nl_country="The Netherlands",
                copyright="© 2026 Hotel Mayflower, Leiden. All rights reserved.",
                cookie="This site stores only your preferences (theme, language) on your own device. The interactive map loads from Google Maps once you allow it.",
-               cookie_yes="Allow map", cookie_no="Essentials only"),
+               cookie_yes="Allow map", cookie_no="Essentials only",
+               notice="Warning: fraudulent WhatsApp and text messages about hotel bookings are circulating. We never ask you to pay via a message link.",
+               notice_link="Read more", notice_url="/en/fraud-alert/", notice_close="Dismiss this warning"),
     "nl": dict(skip="Naar de inhoud", book="Boek nu", menu="Menu",
                theme="Wissel tussen donkere en lichte weergave", brand_home="Hotel Mayflower startpagina",
                footer_tag="Een gastvrij tweesterrenhotel in het historische hart van Leiden, op vijf minuten lopen van Leiden Centraal.",
@@ -38,7 +40,9 @@ STR = {
                nl_country="Nederland",
                copyright="© 2026 Hotel Mayflower, Leiden. Alle rechten voorbehouden.",
                cookie="Deze website bewaart alleen uw voorkeuren (weergave, taal) op uw eigen apparaat. De interactieve kaart wordt pas geladen van Google Maps zodra u dat toestaat.",
-               cookie_yes="Kaart toestaan", cookie_no="Alleen noodzakelijk"),
+               cookie_yes="Kaart toestaan", cookie_no="Alleen noodzakelijk",
+               notice="Let op: er zijn valse WhatsApp- en sms-berichten over hotelboekingen in omloop. Wij vragen u nooit via een berichtlink om te betalen.",
+               notice_link="Lees meer", notice_url="/nl/fraudewaarschuwing/", notice_close="Waarschuwing sluiten"),
 }
 
 
@@ -68,7 +72,7 @@ def head(lang, title, desc, path, alt_path, extra_jsonld="", og_title=None, og_d
 <link rel="icon" href="/assets/logo/beeldmerk_gold.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/css/main.css">
-<script>(function(){{try{{var t=localStorage.getItem("hm-theme");if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();</script>
+<script>(function(){{try{{var t=localStorage.getItem("hm-theme");if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);if(localStorage.getItem("hm-notice-fraud2026"))document.documentElement.setAttribute("data-notice-dismissed","");}}catch(e){{}}}})();</script>
 {extra_jsonld}</head>
 """
 
@@ -126,6 +130,13 @@ def header(lang, active, path, alt_path, body_class=""):
     <li><a class="btn btn-gold menu-book" href="{BOOK}" rel="noopener">{s['book']}</a></li>
   </ul>
 </nav>
+
+<div class="notice-bar" id="fraud-notice" role="region" aria-label="{s['notice_link']}">
+  <div class="container notice-bar-inner">
+    <p>&#9888;&#65039; {s['notice']} <a href="{s['notice_url']}">{s['notice_link']} &rarr;</a></p>
+    <button type="button" class="notice-bar-close" aria-label="{s['notice_close']}">&times;</button>
+  </div>
+</div>
 """
 
 
