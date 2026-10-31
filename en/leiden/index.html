@@ -80,10 +80,16 @@
   </ul>
 </nav>
 
-<div class="notice-bar" id="fraud-notice" role="region" aria-label="Read more">
-  <div class="container notice-bar-inner">
-    <p>&#9888;&#65039; Warning: fraudulent WhatsApp and text messages about hotel bookings are circulating. We never ask you to pay via a message link. <a href="/en/fraud-alert/">Read more &rarr;</a></p>
-    <button type="button" class="notice-bar-close" aria-label="Dismiss this warning">&times;</button>
+<div class="notice-modal" id="fraud-notice" role="dialog" aria-modal="true" aria-labelledby="fraud-notice-title" hidden>
+  <div class="notice-modal-backdrop" data-notice-dismiss></div>
+  <div class="notice-modal-card">
+    <p class="eyebrow">&#9888;&#65039; Hotel Mayflower</p>
+    <h2 id="fraud-notice-title">Warning: fraudulent booking messages</h2>
+    <p>Fraudulent WhatsApp and text messages about hotel bookings are circulating. We never ask you to pay or confirm card details via a message link. In doubt? Call us: +31 71 514 2641.</p>
+    <div class="notice-modal-row">
+      <a class="btn btn-gold" href="/en/fraud-alert/">Read more</a>
+      <button type="button" class="btn btn-ghost" data-notice-dismiss>I understand</button>
+    </div>
   </div>
 </div>
 <main id="main">
