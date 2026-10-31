@@ -143,4 +143,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/guide/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/gids/"/>
   </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/en/fraud-alert/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/fraudewaarschuwing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/fraud-alert/"/>
+  </url>
+  <url>
+    <loc>https://www.hotelmayflower.nl/nl/fraudewaarschuwing/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.hotelmayflower.nl/nl/fraudewaarschuwing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hotelmayflower.nl/en/fraud-alert/"/>
+  </url>
 </urlset>

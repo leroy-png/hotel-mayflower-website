@@ -253,6 +253,18 @@
     });
   }
 
+  /* ---------- Temporary fraud-warning bar ---------- */
+  function initNoticeBar() {
+    var bar = document.getElementById("fraud-notice");
+    if (!bar) return;
+    var close = bar.querySelector(".notice-bar-close");
+    if (!close) return;
+    close.addEventListener("click", function () {
+      try { localStorage.setItem("hm-notice-fraud2026", "1"); } catch (e) {}
+      bar.remove();
+    });
+  }
+
   /* ---------- Contact form ---------- */
   function initContactForm() {
     var form = document.getElementById("contact-form");
@@ -334,5 +346,6 @@
   initVideos();
   initMap();
   initCookieBanner();
+  initNoticeBar();
   initContactForm();
 })();
