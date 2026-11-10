@@ -253,37 +253,6 @@
     });
   }
 
-  /* ---------- Temporary fraud-warning pop-up ---------- */
-  function initNoticeModal() {
-    var m = document.getElementById("fraud-notice");
-    if (!m) return;
-    var seen = null;
-    try { seen = localStorage.getItem("hm-notice-fraud2026"); } catch (e) {}
-    // Not again after dismissal, and never on the information page itself
-    if (seen || /fraud-alert|fraudewaarschuwing/.test(location.pathname)) {
-      m.remove();
-      return;
-    }
-    function dismiss() {
-      try { localStorage.setItem("hm-notice-fraud2026", "1"); } catch (e) {}
-      m.remove();
-    }
-    m.querySelectorAll("[data-notice-dismiss]").forEach(function (el) {
-      el.addEventListener("click", dismiss);
-    });
-    // Following the read-more link also counts as having seen it
-    var link = m.querySelector("a.btn");
-    if (link) link.addEventListener("click", function () {
-      try { localStorage.setItem("hm-notice-fraud2026", "1"); } catch (e) {}
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && document.body.contains(m)) dismiss();
-    });
-    m.hidden = false;
-    var btn = m.querySelector("button[data-notice-dismiss]");
-    if (btn) btn.focus({ preventScroll: true });
-  }
-
   /* ---------- Contact form ---------- */
   function initContactForm() {
     var form = document.getElementById("contact-form");
@@ -365,6 +334,5 @@
   initVideos();
   initMap();
   initCookieBanner();
-  initNoticeModal();
   initContactForm();
 })();
