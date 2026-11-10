@@ -832,14 +832,16 @@ faqs = [
     ("Kan ik mijn bagage achterlaten vóór het inchecken?",
      "Ja. U kunt uw bagage tussen 09:00 en 18:00 uur bij de receptie achterlaten, op eigen risico. Zo kunt u meteen Leiden in."),
     ("Welke kamertypes zijn er?",
-     "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer met ligbad, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),
+     "Wij bieden eenpersoons-, tweepersoons- en driepersoonskamers, elk met eigen badkamer met ligbad, gratis wifi, televisie en thee- en koffiefaciliteiten. Uitzicht en balkons verschillen per kamer en zijn afhankelijk van beschikbaarheid."),    ("Ik heb een WhatsApp- of sms-bericht over mijn boeking ontvangen. Is dat echt?",
+     "Wees voorzichtig: er zijn valse berichten over hotelboekingen in omloop, waarin gasten wordt gevraagd via een link te betalen of kaartgegevens te bevestigen. Dat doen wij nooit. Twijfelt u? Bel ons op +31 71 514 2641, dan controleren wij het voor u. Hoe u deze berichten herkent en wat u kunt doen leest u op onze fraudewaarschuwingspagina.",
+     'Wees voorzichtig: er zijn valse berichten over hotelboekingen in omloop, waarin gasten wordt gevraagd via een link te betalen of kaartgegevens te bevestigen. <strong>Dat doen wij nooit.</strong> Twijfelt u? Bel ons op <a href="tel:+31715142641">+31 71 514 2641</a>, dan controleren wij het voor u. Hoe u deze berichten herkent en wat u kunt doen leest u op onze <a href="/nl/fraudewaarschuwing/">fraudewaarschuwingspagina</a>.'),
 ]
 faq_items = "\n".join(
-    f"""        <details class="faq-item"><summary>{q}</summary><div class="faq-a"><p>{a}</p></div></details>"""
-    for q, a in faqs)
+    f"""        <details class="faq-item"><summary>{f[0]}</summary><div class="faq-a"><p>{f[2] if len(f) > 2 else f[1]}</p></div></details>"""
+    for f in faqs)
 faq_ld_items = ",\n    ".join(
-    f'{{ "@type": "Question", "name": "{q}", "acceptedAnswer": {{ "@type": "Answer", "text": "{a.replace(chr(34), chr(39))}" }} }}'
-    for q, a in faqs)
+    f'{{ "@type": "Question", "name": "{f[0]}", "acceptedAnswer": {{ "@type": "Answer", "text": "{f[1].replace(chr(34), chr(39))}" }} }}'
+    for f in faqs)
 faq_jsonld = f"""<script type="application/ld+json">
 {{
   "@context": "https://schema.org",

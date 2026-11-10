@@ -27,9 +27,7 @@ STR = {
                copyright="© 2026 Hotel Mayflower, Leiden. All rights reserved.",
                cookie="This site stores only your preferences (theme, language) on your own device. The interactive map loads from Google Maps once you allow it.",
                cookie_yes="Allow map", cookie_no="Essentials only",
-               notice_title="Warning: fraudulent booking messages",
-               notice="Fraudulent WhatsApp and text messages about hotel bookings are circulating. We never ask you to pay or confirm card details via a message link. In doubt? Call us: +31 71 514 2641.",
-               notice_link="Read more", notice_url="/en/fraud-alert/", notice_close="I understand"),
+               fraud_label="Fraud warning", fraud_url="/en/fraud-alert/"),
     "nl": dict(skip="Naar de inhoud", book="Boek nu", menu="Menu",
                theme="Wissel tussen donkere en lichte weergave", brand_home="Hotel Mayflower startpagina",
                footer_tag="Een gastvrij tweesterrenhotel in het historische hart van Leiden, op vijf minuten lopen van Leiden Centraal.",
@@ -42,9 +40,7 @@ STR = {
                copyright="© 2026 Hotel Mayflower, Leiden. Alle rechten voorbehouden.",
                cookie="Deze website bewaart alleen uw voorkeuren (weergave, taal) op uw eigen apparaat. De interactieve kaart wordt pas geladen van Google Maps zodra u dat toestaat.",
                cookie_yes="Kaart toestaan", cookie_no="Alleen noodzakelijk",
-               notice_title="Let op: valse berichten over boekingen",
-               notice="Er zijn valse WhatsApp- en sms-berichten over hotelboekingen in omloop. Wij vragen u nooit via een berichtlink om te betalen of kaartgegevens te bevestigen. Twijfelt u? Bel ons: +31 71 514 2641.",
-               notice_link="Lees meer", notice_url="/nl/fraudewaarschuwing/", notice_close="Begrepen"),
+               fraud_label="Fraudewaarschuwing", fraud_url="/nl/fraudewaarschuwing/"),
 }
 
 
@@ -74,7 +70,7 @@ def head(lang, title, desc, path, alt_path, extra_jsonld="", og_title=None, og_d
 <link rel="icon" href="/assets/logo/beeldmerk_gold.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/css/main.css">
-<script>(function(){{try{{var t=localStorage.getItem("hm-theme");if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);if(localStorage.getItem("hm-notice-fraud2026"))document.documentElement.setAttribute("data-notice-dismissed","");}}catch(e){{}}}})();</script>
+<script>(function(){{try{{var t=localStorage.getItem("hm-theme");if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",t);}}catch(e){{}}}})();</script>
 {extra_jsonld}</head>
 """
 
@@ -133,18 +129,6 @@ def header(lang, active, path, alt_path, body_class=""):
   </ul>
 </nav>
 
-<div class="notice-modal" id="fraud-notice" role="dialog" aria-modal="true" aria-labelledby="fraud-notice-title" hidden>
-  <div class="notice-modal-backdrop" data-notice-dismiss></div>
-  <div class="notice-modal-card">
-    <p class="eyebrow">&#9888;&#65039; Hotel Mayflower</p>
-    <h2 id="fraud-notice-title">{s['notice_title']}</h2>
-    <p>{s['notice']}</p>
-    <div class="notice-modal-row">
-      <a class="btn btn-gold" href="{s['notice_url']}">{s['notice_link']}</a>
-      <button type="button" class="btn btn-ghost" data-notice-dismiss>{s['notice_close']}</button>
-    </div>
-  </div>
-</div>
 """
 
 
@@ -177,6 +161,7 @@ def footer(lang, path, alt_path):
           <li><a href="{leiden}">{s['leiden_label']}</a></li>
           <li><a href="{info}">{s['info_label']}</a></li>
           <li><a href="{s['faq_url']}">{s['faq_label']}</a></li>
+          <li><a href="{s['fraud_url']}">{s['fraud_label']}</a></li>
           <li><a href="{contact}">{s['contact_label']}</a></li>
         </ul>
       </div>
